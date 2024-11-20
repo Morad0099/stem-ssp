@@ -532,6 +532,7 @@
                                             <input type="text" placeholder="Phone Number" >
                                         </div>
                                     </div> --}}
+                                    
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" placeholder="Email Address" >
