@@ -59,7 +59,7 @@
                                 <div class="header_left">
                                     <div class="logo">
                                         <a href="/">
-                                            <img src="img/logo_site.png" style="width: 550px" alt="">
+                                            <img src="img/logo_site.png" style="width: 400px" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -519,29 +519,29 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" placeholder="First Name" >
+                                            <input type="text" placeholder="10 Digits Index Number" >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" placeholder="Last Name" >
+                                            <input type="text" placeholder="Date of Birth" >
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    {{-- <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" placeholder="Phone Number" >
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" placeholder="Email Address" >
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    {{-- <div class="col-md-12">
                                         <div class="single_input">
                                             <textarea cols="30" placeholder="Write an Application" rows="10"></textarea>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-12">
                                         <div class="apply_btn">
                                             <button class="boxed-btn3" type="submit">Apply Now</button>
