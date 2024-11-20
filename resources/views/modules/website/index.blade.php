@@ -528,11 +528,11 @@
                                             <input type="text" placeholder="Date of Birth" >
                                         </div>
                                     </div>
-                                    {{-- <div class="col-md-6">
+                                    <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" placeholder="Phone Number" >
+                                            <input type="text" placeholder="Select School" >
                                         </div>
-                                    </div> --}}
+                                    </div>
 
                                     <div class="col-md-6">
                                         <div class="single_input">
