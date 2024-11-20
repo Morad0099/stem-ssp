@@ -59,7 +59,8 @@
                                 <div class="header_left">
                                     <div class="logo">
                                         <a href="/">
-                                            <img src="img/logo_site.png" style="width: 400px" alt="">
+                                            {{-- style="width: 100px" --}}
+                                            <img src="img/logo_site.png"  alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -532,7 +533,7 @@
                                             <input type="text" placeholder="Phone Number" >
                                         </div>
                                     </div> --}}
-                                    
+
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" placeholder="Email Address" >
