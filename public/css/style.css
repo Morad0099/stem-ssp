@@ -849,6 +849,157 @@ h3 {
   top: -29px;
 }
 
+.select2-container--default .select2-selection--multiple {
+  background-color: #fff; /* Background color for the dropdown */
+  border: 1px solid #ddd; /* Border for the dropdown */
+  border-radius: 5px; /* Rounded corners */
+  min-height: 50px; /* Minimum height for better visuals */
+  padding: 5px; /* Inner padding */
+  box-sizing: border-box; /* Prevent content overflow */
+  display: flex; /* Ensure proper layout */
+  align-items: center; /* Center the selected items vertically */
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  display: flex; /* Render selected items as a flex container */
+  flex-wrap: wrap; /* Allow wrapping for multiple selections */
+  gap: 5px; /* Add space between selected items */
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #007bff; /* Background for selected items */
+  color: #fff; /* Text color for selected items */
+  border: 1px solid #0056b3; /* Border for selected items */
+  border-radius: 3px; /* Rounded corners */
+  padding: 2px 5px; /* Inner padding */
+  margin: 2px; /* Space between selected items */
+  font-size: 14px; /* Text size for selected items */
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #fff; /* Remove button color */
+  cursor: pointer; /* Pointer cursor for remove button */
+  margin-right: 5px; /* Space between remove button and text */
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  color: #000; /* Text color for the input field */
+  background-color: transparent; /* Transparent background for input */
+  border: none; /* Remove borders */
+  outline: none; /* Remove focus outline */
+  font-size: 14px; /* Font size for the input field */
+  min-height: 30px; /* Adjust input field height */
+  margin: 2px; /* Add space around the input field */
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+  color: #999; /* Placeholder text color */
+  font-style: italic; /* Italicize placeholder */
+}
+
+.select2-dropdown {
+  border-radius: 5px; /* Match dropdown border radius */
+  width: auto; /* Let the dropdown adjust dynamically */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .select2-container--default .select2-selection--multiple {
+      min-height: 60px; /* Increase height for mobile */
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .select2-container--default .select2-selection--multiple {
+      font-size: 16px; /* Default font size for larger screens */
+  }
+}
+
+
+/* Container for the custom multi-select */
+.custom-multi-select {
+  position: relative;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.custom-select-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+}
+
+.custom-select-box .placeholder {
+  color: #999;
+}
+
+.selected-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.selected-items span {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.selected-items span .remove-item {
+  cursor: pointer;
+  background-color: #0056b3;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.dropdown-options li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-select-box.active .dropdown-options {
+  display: block;
+}
+
+
+
+.logo img {
+  width: 450px;
+  /* max-width: 100%; */
+}
+
 /* line 1, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_header.scss */
 .header-area {
   left: 0;

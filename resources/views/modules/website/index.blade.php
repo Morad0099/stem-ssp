@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -41,10 +44,12 @@
                         <div class="col-lg-12">
                             <div class="header_top_wrap d-flex justify-content-between align-items-center">
                                 <div class="text_wrap">
-                                    <p><span>+880166 253 232</span> <span>info@domain.com</span></p>
+                                    <p><span>+880166 253 232</span> <span>info@stem-ssp.com</span></p>
                                 </div>
                                 <div class="text_wrap">
-                                    <p><a href="{{route('login')}}"> <i class="ti-user"></i>  Login</a> <a href="{{route('register')}}">Register</a></p>
+                                    <p><a href="{{ route('login') }}"> <i class="ti-user"></i> Login</a>
+                                         <a
+                                            href="{{ route('register') }}">Register</a></p>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +65,7 @@
                                     <div class="logo">
                                         <a href="/">
                                             {{-- style="width: 100px" --}}
-                                            <img src="img/logo_site.png"  alt="">
+                                            <img src="img/logo_site.png" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -68,8 +73,8 @@
                                     <div class="main-menu  d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li><a  href="index.html">home</a></li>
-                                                <li><a href="Courses.html">Courses</a></li>
+                                                <li><a href="/">home</a></li>
+                                                <li><a href="#">Courses</a></li>
                                                 {{-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">blog</a></li>
@@ -84,14 +89,17 @@
                                                         <li><a href="elements.html">elements</a></li>
                                                     </ul>
                                                 </li> --}}
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li> <a href="#application-form">Apply Now</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <div class="Appointment">
                                         <div class="book_btn d-none d-lg-block">
-                                            <a data-scroll-nav='1' href="#">Apply NOw</a>
+                                            <a href="#application-form">Apply Now</a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +171,18 @@
         </div>
     </div>
     <!-- slider_area_end -->
-
+    @if (session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <!-- service_area_start  -->
     {{-- <div class="service_area gray_bg">
         <div class="container">
@@ -229,7 +248,8 @@
                 </div>
             </div> --}}
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                    aria-labelledby="nav-home-tab">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
@@ -239,7 +259,8 @@
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span>
                                     <h4>Chemical engneering</h4> --}}
-                                    <p>Explore the world of materials and processes, developing solutions to create sustainable energy and innovative technologies.</p>
+                                    <p>Explore the world of materials and processes, developing solutions to create
+                                        sustainable energy and innovative technologies.</p>
                                     <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
@@ -252,7 +273,8 @@
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span>
                                     <h4>Mechanical engneering</h4> --}}
-                                    <p>Learn to design, analyze, and innovate mechanical systems that power industries and everyday life.</p>
+                                    <p>Learn to design, analyze, and innovate mechanical systems that power industries
+                                        and everyday life.</p>
                                     <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
@@ -265,7 +287,8 @@
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span>
                                     <h4>Bio engneering</h4> --}}
-                                    <p>Combine biology and technology to solve critical healthcare challenges and improve lives through innovation.</p>
+                                    <p>Combine biology and technology to solve critical healthcare challenges and
+                                        improve lives through innovation.</p>
                                     <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
@@ -273,133 +296,142 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/1.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Chemical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/1.png" alt="">
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/3.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Mechanical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/2.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Bio engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Chemical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Mechanical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Bio engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/3.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Chemical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/3.png" alt="">
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/2.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Mechanical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/1.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Bio engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Chemical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Mechanical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Bio engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/2.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Chemical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/2.png" alt="">
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/1.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Mechanical engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single__program">
-                                    <div class="program_thumb">
-                                        <img src="img/program/3.png" alt="">
-                                    </div>
-                                    <div class="program__content">
-                                        <span>Agriculture</span>
-                                        <h4>Bio engneering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
-                                    </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Chemical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Mechanical engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Agriculture</span>
+                                    <h4>Bio engneering</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -423,7 +455,9 @@
                         <div class="coures_info">
                             <div class="section_title white_text">
                                 <h3>Latest Courses</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis
+                                    nostrud exercitation.</p>
                             </div>
                             <div class="coures_wrap d-flex">
                                 <div class="single_wrap">
@@ -432,8 +466,9 @@
                                     </div>
                                     <h4>Bachelor of <br>
                                         Graphic Design</h4>
-                                        <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor incididunt ut piscing vcs.</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor
+                                        incididunt ut piscing vcs.</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                                 <div class="single_wrap">
                                     <div class="icon">
@@ -441,8 +476,9 @@
                                     </div>
                                     <h4>Bachelor of <br>
                                         Graphic Design</h4>
-                                        <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor incididunt ut piscing vcs.</p>
-                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor
+                                        incididunt ut piscing vcs.</p>
+                                    <a href="#" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +496,8 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Recent Event</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
@@ -474,8 +511,10 @@
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>How to speake like a nativespeaker?</h4>
-                             </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
+                            </a>
+                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
+                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
+                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
                         </div>
                     </div>
                     <div class="single_event d-flex align-items-center">
@@ -486,8 +525,10 @@
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>How to speake like a nativespeaker?</h4>
-                             </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
+                            </a>
+                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
+                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
+                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
                         </div>
                     </div>
                     <div class="single_event d-flex align-items-center">
@@ -498,8 +539,10 @@
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>How to speake like a nativespeaker?</h4>
-                             </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
+                            </a>
+                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
+                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
+                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
                         </div>
                     </div>
                 </div>
@@ -508,42 +551,56 @@
     </div>
     <!-- recent_event_area_end  -->
 
+
     <!-- latest_coures_area_start  -->
-    <div data-scroll-index='1' class="admission_area">
+    <div id="application-form" data-scroll-index='1' class="admission_area">
         <div class="admission_inner">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-lg-7">
                         <div class="admission_form">
                             <h3>Apply for Admission</h3>
-                            <form action="#">
+                            <form action="{{ route('apply') }}" method="POST">
+                                @csrf
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" placeholder="10 Digits Index Number" >
+                                            <input type="text" name="index_number"
+                                                placeholder="10 Digits Index Number" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" placeholder="Date of Birth" >
+                                            <input type="date" name="date_of_birth" placeholder="Date of Birth"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single_input">
-                                            <input type="text" placeholder="Select School" >
+                                        <div class="single_input custom-multi-select">
+                                            <div class="custom-select-box">
+                                                <span class="placeholder">Select up to two schools</span>
+                                                <div class="selected-items"></div>
+                                                <ul class="dropdown-options">
+                                                    @foreach ($schools as $school)
+                                                        <li data-value="{{ $school->id }}">
+                                                            {{ $school->sch_name }} ({{ $school->gender }}) REGION:
+                                                            {{ $school->region }}
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                            <input type="hidden" name="schools[]" class="hidden-input">
+                                            {{-- <small class="select-info" style="color: white">Select up to two schools</small> --}}
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6">
+
+                                    <div class="col-md-6" style="margin-top: 30px">
                                         <div class="single_input">
-                                            <input type="text" placeholder="Email Address" >
+                                            <input type="email" name="email" placeholder="Email Address"
+                                                required>
                                         </div>
                                     </div>
-                                    {{-- <div class="col-md-12">
-                                        <div class="single_input">
-                                            <textarea cols="30" placeholder="Write an Application" rows="10"></textarea>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-md-12">
                                         <div class="apply_btn">
                                             <button class="boxed-btn3" type="submit">Apply Now</button>
@@ -551,6 +608,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -567,7 +625,8 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Recent News</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
@@ -585,9 +644,10 @@
                                 <h4>Those Other College Expenses You
                                     Aren’t Thinking About</h4>
                             </a>
-                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10, 2020</span> 
-                            
-                            <span> <i class="flaticon-comment"></i> 01 comments</span>
+                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
+                                    2020</span>
+
+                                <span> <i class="flaticon-comment"></i> 01 comments</span>
                             </p>
                         </div>
                     </div>
@@ -605,9 +665,10 @@
                                 <h4>Those Other College Expenses You
                                     Aren’t Thinking About</h4>
                             </a>
-                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10, 2020</span> 
-                            
-                            <span> <i class="flaticon-comment"></i> 01 comments</span>
+                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
+                                    2020</span>
+
+                                <span> <i class="flaticon-comment"></i> 01 comments</span>
                             </p>
                         </div>
                     </div>
@@ -663,7 +724,7 @@
                                         </li>
                                     </ul>
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
@@ -734,9 +795,15 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Stem SSP</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i
+                                class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Stem SSP</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
                         </p>
                     </div>
                 </div>
@@ -747,8 +814,103 @@
 
 
     <!-- JS here -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.custom-select').select2({
+                placeholder: "Select up to two schools",
+                maximumSelectionLength: 2, // Allow selecting up to two schools
+                width: '100%' // Make it responsive
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const selectBox = document.querySelector(".custom-select-box");
+            const dropdownOptions = selectBox.querySelector(".dropdown-options");
+            const selectedItemsContainer = selectBox.querySelector(".selected-items");
+            const hiddenInput = document.querySelector(".hidden-input");
+
+            const maxSelection = 2;
+
+            // Toggle dropdown visibility
+            selectBox.addEventListener("click", () => {
+                selectBox.classList.toggle("active");
+            });
+
+            // Select option logic
+            dropdownOptions.addEventListener("click", (e) => {
+                if (e.target.tagName === "LI") {
+                    const selectedValue = e.target.getAttribute("data-value");
+                    const selectedText = e.target.textContent;
+
+                    // Check if already selected
+                    const existingSelection = selectedItemsContainer.querySelector(
+                        `[data-value="${selectedValue}"]`
+                    );
+                    if (existingSelection) return;
+
+                    // Limit selection
+                    if (selectedItemsContainer.children.length >= maxSelection) {
+                        alert(`You can only select up to ${maxSelection} schools.`);
+                        return;
+                    }
+
+                    // Add selected item
+                    const selectedSpan = document.createElement("span");
+                    selectedSpan.setAttribute("data-value", selectedValue);
+                    selectedSpan.innerHTML = `${selectedText} <span class="remove-item">&times;</span>`;
+                    selectedItemsContainer.appendChild(selectedSpan);
+
+                    // Update hidden input
+                    updateHiddenInput();
+
+                    // Remove item logic
+                    selectedSpan.querySelector(".remove-item").addEventListener("click", () => {
+                        selectedSpan.remove();
+                        updateHiddenInput();
+                    });
+                }
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener("click", (e) => {
+                if (!selectBox.contains(e.target)) {
+                    selectBox.classList.remove("active");
+                }
+            });
+
+            // Update hidden input
+            function updateHiddenInput() {
+                const selectedValues = Array.from(
+                    selectedItemsContainer.querySelectorAll("span[data-value]")
+                ).map((item) => item.getAttribute("data-value"));
+
+                console.log("Selected schools being sent:", selectedValues); // Debug log
+                hiddenInput.value = JSON.stringify(selectedValues); // Correct format
+            }
+
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    {{-- <script src="js/vendor/jquery-1.12.4.min.js"></script> --}}
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -760,7 +922,7 @@
     <script src="js/scrollIt.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
+    {{-- <script src="js/nice-select.min.js"></script> --}}
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
