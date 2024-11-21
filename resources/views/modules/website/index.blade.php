@@ -48,8 +48,8 @@
                                 </div>
                                 <div class="text_wrap">
                                     <p><a href="{{ route('login') }}"> <i class="ti-user"></i> Login</a>
-                                         <a
-                                            href="{{ route('register') }}">Register</a></p>
+                                         {{-- <a
+                                            href="{{ route('register') }}">Register</a></p> --}}
                                 </div>
                             </div>
                         </div>

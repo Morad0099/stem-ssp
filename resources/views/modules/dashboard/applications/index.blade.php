@@ -39,7 +39,7 @@
                                         <input type="hidden" name="student_id" value="{{ $student->id }}">
                                         <select name="school_id" class="form-control" required>
                                             <option value="">Select School</option>
-                                            @foreach($schools as $school)
+                                            @foreach($student->selectedSchools as $school)
                                                 <option value="{{ $school->id }}">{{ $school->sch_name }}</option>
                                             @endforeach
                                         </select>
