@@ -118,35 +118,35 @@
     <div class="slider_area">
         <div class="slider_active owl-carousel">
             <!-- single_carouse -->
-            <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="single_slider d-flex align-items-center slider_bg_1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text ">
-                                {{-- <h3>Boost up your skills <br>
-                                    with a new way of <br>
-                                    learning.</h3>
-                                <a href="#" class="boxed-btn3">Get Start</a>
-                                <a href="#" class="boxed-btn4">Take a tour</a> --}}
+                        {{-- <div class="col-xl-12">
+                            <div class="text-box">
+                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
+                                <div class="button-group">
+                                    <a href="#" class="boxed-btn3">Get Start</a>
+                                    <a href="#" class="boxed-btn4">Take a tour</a>
+                                </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
+            
             <!--/ single_carouse -->
             <!-- single_carouse -->
             <div class="single_slider  d-flex align-items-center slider_bg_2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12">
-                            {{-- <div class="slider_text ">
-                                <h3>Boost up your skills <br>
-                                    with a new way of <br>
-                                    learning.</h3>
+                        {{-- <div class="col-xl-12">
+                            <div >
+                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
+
                                 <a href="#" class="boxed-btn3">Get Start</a>
                                 <a href="#" class="boxed-btn4">Take a tour</a>
-                            </div> --}}
-                        </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -155,15 +155,13 @@
             <div class="single_slider  d-flex align-items-center slider_bg_3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12">
-                            {{-- <div class="slider_text ">
-                                <h3>Boost up your skills <br>
-                                    with a new way of <br>
-                                    learning.</h3>
+                        {{-- <div class="col-xl-12">
+                            <div >
+                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
                                 <a href="#" class="boxed-btn3">Get Start</a>
                                 <a href="#" class="boxed-btn4">Take a tour</a>
-                            </div> --}}
-                        </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -184,45 +182,24 @@
         </div>
     @endif
     <!-- service_area_start  -->
-    {{-- <div class="service_area gray_bg">
+    <div class="service_area gray_bg">
         <div class="container">
-            <div class="row justify-content-center ">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service d-flex align-items-center ">
-                        <div class="icon">
-                            <i class="flaticon-school"></i>
-                        </div>
-                        <div class="service_info">
-                            <h4>Scholarship</h4>
-                            <p>Available</p>
-                        </div>
+            <div class="row ">
+                <div class="">
+                    <h2>What is STEM Education?</h2>
+                <p>
+                    STEM education integrates four disciplines—Science, Technology, Engineering, and Mathematics—into a cohesive learning model. 
+                </p>
+                <p>
+                    It goes beyond textbook knowledge, blending theory with practical, real-world applications. 
+                </p>
+                <p>
+                    Through collaborative projects, hands-on experiments, and interdisciplinary learning, students discover how these fields intersect and drive innovation.
+                </p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service d-flex align-items-center ">
-                        <div class="icon">
-                            <i class="flaticon-error"></i>
-                        </div>
-                        <div class="service_info">
-                            <h4>Scholarship</h4>
-                            <p>Available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service d-flex align-items-center ">
-                        <div class="icon">
-                            <i class="flaticon-book"></i>
-                        </div>
-                        <div class="service_info">
-                            <h4>Scholarship</h4>
-                            <p>Available</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!--/ service_area_start  -->
 
     <!-- popular_program_area_start  -->
@@ -257,11 +234,10 @@
                                     <img src="img/stem/stem-8.jpeg" alt="">
                                 </div>
                                 <div class="program__content">
-                                    {{-- <span>Agriculture</span>
-                                    <h4>Chemical engneering</h4> --}}
-                                    <p>Explore the world of materials and processes, developing solutions to create
-                                        sustainable energy and innovative technologies.</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <span>Unlocking Problem-Solving Potential</span> --}}
+                                    <h4>Unlocking Problem-Solving Potential</h4>
+                                    <p>STEM education teaches students how to approach challenges logically and methodically. Whether designing an energy-efficient car or solving a complex mathematical equation, students develop skills to think critically and find solutions to problems—skills they will use for life.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -271,11 +247,10 @@
                                     <img src="img/stem/stem-4.jpeg" alt="">
                                 </div>
                                 <div class="program__content">
-                                    {{-- <span>Agriculture</span>
-                                    <h4>Mechanical engneering</h4> --}}
-                                    <p>Learn to design, analyze, and innovate mechanical systems that power industries
-                                        and everyday life.</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <span>Agriculture</span> --}}
+                                    <h4>Preparing for Future Careers</h4>
+                                    <p>The world is changing, and so is the job market. Careers in STEM fields are among the most lucrative and in-demand globally, with professions ranging from data scientists to aerospace engineers. STEM education equips students with the skills and knowledge to thrive in these high-growth industries.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -285,11 +260,49 @@
                                     <img src="img/stem/stem-6.jpeg" alt="">
                                 </div>
                                 <div class="program__content">
-                                    {{-- <span>Agriculture</span>
-                                    <h4>Bio engneering</h4> --}}
-                                    <p>Combine biology and technology to solve critical healthcare challenges and
-                                        improve lives through innovation.</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <span>Agriculture</span> --}}
+                                    <h4>Encouraging Creativity and Innovation</h4>
+                                    <p>STEM isn’t just about solving problems—it’s about thinking creatively to innovate. Whether it’s building a robot or developing a mobile app, STEM inspires students to experiment, prototype, and turn their ideas into reality.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/stem/stem-7.jpeg" alt="">
+                                </div>
+                                <div class="program__content">
+                                    {{-- <span>Agriculture</span> --}}
+                                    <h4>Promoting Inclusivity and Diversity</h4>
+                                    <p>STEM education breaks down barriers by providing opportunities for everyone, regardless of gender, ethnicity, or background. By encouraging participation from underrepresented groups, STEM ensures a diverse and inclusive workforce capable of tackling global challenges.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="img/stem/stem-9.jpeg" alt="">
+                                </div>
+                                <div class="program__content">
+                                    {{-- <span>Agriculture</span> --}}
+                                    <h4>Building Teamwork and Communication Skills</h4>
+                                    <p>Collaboration is at the heart of STEM education. Students work together on projects, learning to communicate effectively and respect diverse perspectives. These skills are invaluable not just in STEM careers but in all aspects of life.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img style="height: 500px" src="img/stem/stem-5.jpeg" alt="">
+                                </div>
+                                <div class="program__content">
+                                    {{-- <span>Agriculture</span> --}}
+                                    <h4>Nurturing Curiosity and Lifelong Learning</h4>
+                                    <p>STEM education ignites curiosity. It encourages students to ask questions, explore the unknown, and develop a love for discovery. This mindset fosters lifelong learning, ensuring students remain adaptable and innovative throughout their lives.</p>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +320,7 @@
                                     <h4>Chemical engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +334,7 @@
                                     <h4>Mechanical engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +348,7 @@
                                     <h4>Bio engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +366,7 @@
                                     <h4>Chemical engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +380,7 @@
                                     <h4>Mechanical engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -381,7 +394,7 @@
                                     <h4>Bio engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -435,13 +448,13 @@
                 </div>
             </div>
 
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-lg-12">
                     <div class="course_all_btn text-center">
                         <a href="Courses.html" class="boxed-btn4">View All course</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- popular_program_area_end -->
@@ -454,31 +467,29 @@
                     <div class="col-lg-8">
                         <div class="coures_info">
                             <div class="section_title white_text">
-                                <h3>Latest Courses</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis
-                                    nostrud exercitation.</p>
+                                <h3>Why Choose STEM-SSP?</h3>
+                                <p>At STEM-SSP, we believe every student has the potential to be a change-maker. Our programs are designed to inspire, challenge, and prepare students for a dynamic future. Here’s what sets us apart: <br>
+                                    • Hands-On Learning Experiences: Our curriculum focuses on real-world applications, ensuring students gain practical skills. <br>
+                                    • Expert Guidance: Our dedicated educators and mentors bring years of experience and a passion for teaching. <br>
+                                    • Inclusive Opportunities: We strive to make STEM accessible to all, creating a supportive and diverse learning environment.</p>
                             </div>
                             <div class="coures_wrap d-flex">
                                 <div class="single_wrap">
-                                    <div class="icon">
-                                        <i class="flaticon-lab"></i>
+                                    <div >
+                                        <h3 style="color: white">What Our Community Says</h3>
                                     </div>
-                                    <h4>Bachelor of <br>
-                                        Graphic Design</h4>
-                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor
-                                        incididunt ut piscing vcs.</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <h4>"STEM-SSP has completely transformed my child’s learning experience. They’ve gained skills, confidence, and a passion for science that I’ve never seen before!"</h4>
+                                    <i style="color:white">Aisha A., Parent</i> <br><br>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                                 <div class="single_wrap">
-                                    <div class="icon">
-                                        <i class="flaticon-lab"></i>
-                                    </div>
-                                    <h4>Bachelor of <br>
-                                        Graphic Design</h4>
-                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod tpor
-                                        incididunt ut piscing vcs.</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <div >
+                                        <h3 style="color: white">What Our Community Says</h3>
+                                    </div> --}}
+                                    <br>
+                                    <h4>"The hands-on projects and expert mentorship at STEM-SSP prepared me for university and gave me a head start in my engineering degree."</h4>
+                                    <i style="color:white">Kwame A., Former Student</i> <br><br>
+                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -495,54 +506,48 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
-                        <h3 class="mb-45">Recent Event</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <h3 class="mb-45">Join the STEM Movement Today</h3>
+                        <p>Are you ready to unlock the potential within you or your child? STEM education is the key to a world of opportunities, innovation, and impact. At STEM-SSP, we’re committed to guiding students every step of the way.</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="single_event d-flex align-items-center">
-                        <div class="date text-center">
-                            <span>02</span>
-                            <p>Dec, 2020</p>
-                        </div>
-                        <div class="event_info">
-                            <a href="event_details.html">
-                                <h4>How to speake like a nativespeaker?</h4>
-                            </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
-                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
-                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
-                        </div>
-                    </div>
-                    <div class="single_event d-flex align-items-center">
-                        <div class="date text-center">
+                        {{-- <div class="date text-center">
                             <span>03</span>
                             <p>Dec, 2020</p>
-                        </div>
+                        </div> --}}
                         <div class="event_info">
                             <a href="event_details.html">
-                                <h4>How to speake like a nativespeaker?</h4>
+                                <h4>Sign Up for a STEM-SSP Program</h4>
                             </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
-                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
-                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
+                            <p>Empower yourself or your child with the tools to innovate and succeed in the 21st century.</p>
                         </div>
                     </div>
                     <div class="single_event d-flex align-items-center">
                         <div class="date text-center">
-                            <span>10</span>
-                            <p>Dec, 2020</p>
+                            <span>17</span>
+                            <p>Dec, 2024</p>
                         </div>
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>How to speake like a nativespeaker?</h4>
                             </a>
-                            <p><span> <i class="flaticon-clock"></i> 10:30 pm</span> <span> <i
-                                        class="flaticon-calendar"></i> 21Nov 2020 </span> <span> <i
-                                        class="flaticon-placeholder"></i> AH Oditoriam</span> </p>
+                            <p>Discover hands-on workshops that cover robotics, coding, engineering design, and more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single_event d-flex align-items-center">
+                        {{-- <div class="date text-center">
+                            <span>10</span>
+                            <p>Dec, 2020</p>
+                        </div> --}}
+                        <div class="event_info">
+                            <a href="event_details.html">
+                                <h4>Contact Us:</h4>
+                            </a>
+                            <p>Got questions? Reach out to our team at info@stem-ssp.com or call us at +233-XXX-XXX-XXX.</p>
                         </div>
                     </div>
                 </div>
@@ -624,9 +629,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
-                        <h3 class="mb-45">Recent News</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <h3 class="mb-45">Take the first step toward a brighter future! Enroll Now</h3>
+                        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p> --}}
                     </div>
                 </div>
             </div>
@@ -641,35 +646,33 @@
                         </div>
                         <div class="news_info">
                             <a href="single-blog.html">
-                                <h4>Those Other College Expenses You
-                                    Aren’t Thinking About</h4>
+                                <h4>Our curriculum focuses on real-world applications</h4>
                             </a>
-                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
+                            {{-- <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
                                     2020</span>
 
                                 <span> <i class="flaticon-comment"></i> 01 comments</span>
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="single__news">
                         <div class="thumb">
-                            <a href="single-blog.html">
+                            <a href="/">
                                 <img src="img/stem/stem-6.jpeg" alt="">
                             </a>
-                            <span class="badge bandge_2">Hall Life</span>
+                            <span class="badge bandge_2">Class Life</span>
                         </div>
                         <div class="news_info">
-                            <a href="single-blog.html">
-                                <h4>Those Other College Expenses You
-                                    Aren’t Thinking About</h4>
+                            <a href="/">
+                                <h4>Our dedicated educators and mentors bring years of experience and a passion for teaching.</h4>
                             </a>
-                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
+                            {{-- <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
                                     2020</span>
 
                                 <span> <i class="flaticon-comment"></i> 01 comments</span>
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
