@@ -47,7 +47,7 @@
                                     <p><span>+880166 253 232</span> <span>info@stem-ssp.com</span></p>
                                 </div>
                                 <div class="text_wrap">
-                                    <p><a href="{{ route('login') }}"> <i class="ti-user"></i> Login</a>
+                                    <p><a href="{{ route('login') }}"> <i class="ti-user"></i> Sign In</a>
                                          {{-- <a
                                             href="{{ route('register') }}">Register</a></p> --}}
                                 </div>
@@ -121,15 +121,16 @@
             <div class="single_slider d-flex align-items-center slider_bg_1">
                 <div class="container">
                     <div class="row">
-                        {{-- <div class="col-xl-12">
-                            <div class="text-box">
-                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
-                                <div class="button-group">
-                                    <a href="#" class="boxed-btn3">Get Start</a>
-                                    <a href="#" class="boxed-btn4">Take a tour</a>
-                                </div>
-                            </div>
-                        </div> --}}
+                        <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>Your gateway to  <br>
+                                enrolling in the best   <br>
+                                STEM schools in <br>
+                                Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <a href="#" class="boxed-btn4">How It Works</a>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,14 +140,16 @@
             <div class="single_slider  d-flex align-items-center slider_bg_2">
                 <div class="container">
                     <div class="row">
-                        {{-- <div class="col-xl-12">
-                            <div >
-                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
-
-                                <a href="#" class="boxed-btn3">Get Start</a>
-                                <a href="#" class="boxed-btn4">Take a tour</a>
-                            </div>
-                        </div> --}}
+                        <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>Your gateway to  <br>
+                                enrolling in the best   <br>
+                                STEM schools in <br>
+                                Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <a href="#" class="boxed-btn4">How It Works</a>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,13 +158,16 @@
             <div class="single_slider  d-flex align-items-center slider_bg_3">
                 <div class="container">
                     <div class="row">
-                        {{-- <div class="col-xl-12">
-                            <div >
-                                <h3>Your gateway to enrolling in the best STEM schools in Ghana.<br></h3>
-                                <a href="#" class="boxed-btn3">Get Start</a>
-                                <a href="#" class="boxed-btn4">Take a tour</a>
-                            </div>
-                        </div> --}}
+                        <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>Your gateway to  <br>
+                                enrolling in the best   <br>
+                                STEM schools in <br>
+                                Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <a href="#" class="boxed-btn4">How It Works</a>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,7 +192,7 @@
         <div class="container">
             <div class="row ">
                 <div class="">
-                    <h2>What is STEM Education?</h2>
+                    {{-- <h2>What is STEM Education?</h2> --}}
                 <p>
                     STEM education integrates four disciplines—Science, Technology, Engineering, and Mathematics—into a cohesive learning model. 
                 </p>
