@@ -29,6 +29,11 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden; /* Ensure the root element also prevents overflow */
+}
+
+
 /* line 12, ../../Arafath/CL/january 2020/243.Education/HTML/scss/theme-default.scss */
 .img {
   max-width: 100%;
