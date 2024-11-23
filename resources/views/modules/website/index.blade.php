@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div id="sticky-header" class="main-header-area" data-aos="fade-up" data-aos-duration="1000">
+            <div id="sticky-header" class="main-header-area" >
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
