@@ -10,6 +10,7 @@
 
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.ico') }}" rel="icon">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
