@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
 
 </head>
@@ -56,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div id="sticky-header" class="main-header-area">
+            <div id="sticky-header" class="main-header-area" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
@@ -115,7 +116,7 @@
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area">
+    <div class="slider_area" data-aos="flip-left" data-aos-duration="1200">
         <div class="slider_active owl-carousel">
             <!-- single_carouse -->
             <div class="single_slider d-flex align-items-center slider_bg_1">
@@ -123,11 +124,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                         <div class="slider_text ">
-                            <h3>Your gateway to  <br>
-                                enrolling in the best   <br>
-                                STEM schools in <br>
-                                Ghana.</h3>
-                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <h3>Your gateway   <br>
+                                to enrolling <br> in the best   <br>
+                                STEM schools  <br>
+                                in Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
                         </div>
@@ -142,11 +143,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                         <div class="slider_text ">
-                            <h3>Your gateway to  <br>
-                                enrolling in the best   <br>
-                                STEM schools in <br>
-                                Ghana.</h3>
-                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <h3>Your gateway   <br>
+                                to enrolling <br> in the best   <br>
+                                STEM schools  <br>
+                                in Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
                         </div>
@@ -160,11 +161,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                         <div class="slider_text ">
-                            <h3>Your gateway to  <br>
-                                enrolling in the best   <br>
-                                STEM schools in <br>
-                                Ghana.</h3>
-                            <a href="#application-form" class="boxed-btn3">Start School Selection</a>
+                            <h3>Your gateway   <br>
+                                to enrolling <br> in the best   <br>
+                                STEM schools  <br>
+                                in Ghana.</h3>
+                            <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
                         </div>
@@ -188,12 +189,12 @@
         </div>
     @endif
     <!-- service_area_start  -->
-    <div class="service_area gray_bg">
+    <div class="service_area gray_bg" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <div class="container">
             <div class="row ">
                 <div class="">
                     {{-- <h2>What is STEM Education?</h2> --}}
-                <p>
+                <p >
                     STEM education integrates four disciplines—Science, Technology, Engineering, and Mathematics—into a cohesive learning model. 
                 </p>
                 <p>
@@ -209,7 +210,7 @@
     <!--/ service_area_start  -->
 
     <!-- popular_program_area_start  -->
-    <div class="popular_program_area section__padding">
+    <div class="popular_program_area section__padding" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -230,7 +231,7 @@
                     </nav>
                 </div>
             </div> --}}
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content" id="nav-tabContent" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                     aria-labelledby="nav-home-tab">
                     <div class="row">
@@ -247,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1200">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-4.jpeg" alt="">
@@ -260,7 +261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6"  data-aos="fade-down-right" data-aos-duration="1500">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-6.jpeg" alt="">
@@ -273,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-7.jpeg" alt="">
@@ -286,7 +287,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-9.jpeg" alt="">
@@ -299,7 +300,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img style="height: 500px" src="img/stem/stem-5.jpeg" alt="">
@@ -466,7 +467,7 @@
     <!-- popular_program_area_end -->
 
     <!-- latest_coures_area_start  -->
-    <div class="latest_coures_area">
+    <div class="latest_coures_area" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="latest_coures_inner">
             <div class="container">
                 <div class="row">
@@ -507,7 +508,7 @@
     <!--/ latest_coures_area_end -->
 
     <!-- recent_event_area_strat  -->
-    <div class="recent_event_area section__padding">
+    <div class="recent_event_area section__padding" data-aos="flip-left" data-aos-duration="1200">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -531,7 +532,7 @@
                             <p>Empower yourself or your child with the tools to innovate and succeed in the 21st century.</p>
                         </div>
                     </div>
-                    <div class="single_event d-flex align-items-center">
+                    {{-- <div class="single_event d-flex align-items-center">
                         <div class="date text-center">
                             <span>17</span>
                             <p>Dec, 2024</p>
@@ -542,7 +543,7 @@
                             </a>
                             <p>Discover hands-on workshops that cover robotics, coding, engineering design, and more.</p>
                         </div>
-                    </div>
+                    </div> --}}
                     
                     <div class="single_event d-flex align-items-center">
                         {{-- <div class="date text-center">
@@ -564,7 +565,7 @@
 
 
     <!-- latest_coures_area_start  -->
-    <div id="application-form" data-scroll-index='1' class="admission_area">
+    <div id="application-form" data-scroll-index='1' class="admission_area" data-aos="fade" data-aos-duration="1000">
         <div class="admission_inner">
             <div class="container">
                 <div class="row justify-content-end">
@@ -630,7 +631,7 @@
 
 
     <!-- recent_news_area_start  -->
-    <div class="recent_news_area section__padding">
+    <div class="recent_news_area section__padding" data-aos="fade-down-right" data-aos-duration="1500">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -808,9 +809,9 @@
                             Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i
+                            </script> All rights reserved | This website is made with <i
                                 class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                target="_blank">Stem SSP</a>
+                                target="_blank"> <span style="color: white">Stem SSP</span></a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                         </p>
@@ -917,7 +918,58 @@
             });
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script>
+        window.addEventListener('load', function() {
+            AOS.init(); // Initialize AOS after load
+        });
 
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            const curtainContainer = document.getElementById('curtain-container');
+            const app = document.getElementById('app');
+
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                // Start curtain animation
+                curtainContainer.classList.add('reveal');
+
+                setTimeout(() => {
+                    curtainContainer.style.display = 'none';
+                    app.style.display = 'block';
+                    AOS.refresh(); // Refresh AOS
+                }, 1000);
+            }, 500);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeUpElements = document.querySelectorAll('.fade-up');
+
+            function handleScroll() {
+                fadeUpElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleScroll);
+            handleScroll();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const animations = ['slideIn', 'scaleUp', 'rotate', 'bounce'];
+
+            navItems.forEach((item, index) => {
+                const animationClass = `animate-${animations[index % animations.length]}`;
+                item.classList.add(animationClass);
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     {{-- <script src="js/vendor/jquery-1.12.4.min.js"></script> --}}
     <script src="js/popper.min.js"></script>

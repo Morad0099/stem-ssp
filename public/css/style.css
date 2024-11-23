@@ -319,7 +319,7 @@ h3 {
 /* button style */
 /* line 228, ../../Arafath/CL/january 2020/243.Education/HTML/scss/theme-default.scss */
 .owl-carousel .owl-nav div {
-  background-color: #5db2ff !important;
+  background-color: transparent;
   height: 50px;
   left: 0px;
   position: absolute;
@@ -1512,6 +1512,33 @@ h3 {
   line-height: 1.16;
   margin-bottom: 62px;
 }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 
 @media (max-width: 767px) {
   /* line 27, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_slider.scss */
