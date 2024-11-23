@@ -24,6 +24,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* line 12, ../../Arafath/CL/january 2020/243.Education/HTML/scss/theme-default.scss */
