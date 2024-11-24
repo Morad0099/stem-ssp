@@ -33,6 +33,56 @@ html {
   overflow-x: hidden; /* Ensure the root element also prevents overflow */
 }
 
+.custom_service_area {
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 100%;
+  max-width: 1200px; /* Increased max-width for desktop */
+}
+
+.custom_service_area .custom_paragraph:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0056b3; /* A distinct color for the first paragraph */
+}
+
+.custom_service_area .custom_paragraph:last-of-type {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+.custom_service_area .custom_paragraph span.highlight {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.custom_service_area p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.custom_service_area p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom_service_area {
+      max-width: 90%; /* Narrower card for smaller devices */
+  }
+
+  .custom_service_area p {
+      font-size: 14px; /* Adjust text size for mobile */
+  }
+}
 
 /* line 12, ../../Arafath/CL/january 2020/243.Education/HTML/scss/theme-default.scss */
 .img {

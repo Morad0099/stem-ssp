@@ -176,7 +176,7 @@
             </div>
             <!--/ single_carouse -->
         </div>
-    </div>
+    </div> <br><br>
     <!-- slider_area_end -->
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -191,24 +191,24 @@
         </div>
     @endif
     <!-- service_area_start  -->
-    <div class="service_area gray_bg" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+    <div class="custom_service_area" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <div class="container">
-            <div class="row ">
-                <div class="">
-                    {{-- <h2>What is STEM Education?</h2> --}}
-                <p >
-                    STEM education integrates four disciplines—Science, Technology, Engineering, and Mathematics—into a cohesive learning model. 
-                </p>
-                <p>
-                    It goes beyond textbook knowledge, blending theory with practical, real-world applications. 
-                </p>
-                <p>
-                    Through collaborative projects, hands-on experiments, and interdisciplinary learning, students discover how these fields intersect and drive innovation.
-                </p>
-                    </div>
+            <div class="row">
+                <div>
+                    <p class="custom_paragraph" data-aos="fade-right">
+                        STEM education integrates four disciplines<span class="highlight"> Science</span>, <span class="highlight">Technology</span>, <span class="highlight">Engineering</span>, and <span class="highlight">Mathematics</span> into a cohesive learning model.
+                    </p>
+                    <p class="custom_paragraph" data-aos="fade-left">
+                        It goes beyond textbook knowledge, blending theory with practical, real-world applications.
+                    </p>
+                    <p class="custom_paragraph" data-aos="fade-up">
+                        Through collaborative projects, hands-on experiments, and interdisciplinary learning, students discover how these fields intersect and drive innovation.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    
     <!--/ service_area_start  -->
 
     <!-- popular_program_area_start  -->
