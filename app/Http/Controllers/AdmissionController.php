@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Schools;
 use App\Models\Student;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -41,11 +42,14 @@ class AdmissionController extends Controller
             'last_name' => 'required|string|max:255',
             'phone_number' => 'required|digits:10',
             'index_number' => 'required|digits:10|unique:students,index_number',
-            'date_of_birth' => 'required|date',
+            'date_of_birth' => 'required|date_format:m/d/Y', // Validate the input format
             'email' => 'required|email|unique:students,email|unique:users,email',
             'schools' => 'required|array|size:2',
             'schools.*' => 'exists:schools,id',
         ]);
+
+        $dateOfBirth = Carbon::createFromFormat('m/d/Y', $request->date_of_birth)->format('Y-m-d');
+
 
         // Extract name from email
         // $name = ucfirst(explode('@', $request->email)[0]);
@@ -60,7 +64,7 @@ class AdmissionController extends Controller
             'last_name' => $request->last_name,
             'phone_number' => $request->phone_number,
             'index_number' => $request->index_number,
-            'date_of_birth' => $request->date_of_birth,
+            'date_of_birth' => $dateOfBirth,
             'email' => $request->email,
         ]);
 
