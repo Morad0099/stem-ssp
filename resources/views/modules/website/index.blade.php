@@ -11,8 +11,8 @@
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
-    <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script>
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
+    <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script> --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- CSS here -->
