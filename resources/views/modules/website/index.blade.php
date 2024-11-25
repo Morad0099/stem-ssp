@@ -474,8 +474,8 @@
                     <div class="col-lg-8">
                         <div class="coures_info">
                             <div class="section_title white_text">
-                                <h3>Why Choose STEM-SSP?</h3>
-                                <p>At STEM-SSP, we believe every student has the potential to be a change-maker. Our programs are designed to inspire, challenge, and prepare students for a dynamic future. Here’s what sets us apart: <br>
+                                <h3>Why Choose STEM?</h3>
+                                <p>With STEM, we believe every student has the potential to be a change-maker. Our programs are designed to inspire, challenge, and prepare students for a dynamic future. Here’s what sets us apart: <br>
                                     • Hands-On Learning Experiences: Our curriculum focuses on real-world applications, ensuring students gain practical skills. <br>
                                     • Expert Guidance: Our dedicated educators and mentors bring years of experience and a passion for teaching. <br>
                                     • Inclusive Opportunities: We strive to make STEM accessible to all, creating a supportive and diverse learning environment.</p>
@@ -485,7 +485,7 @@
                                     <div >
                                         <h3 style="color: white">What Our Community Says</h3>
                                     </div>
-                                    <h4>"STEM-SSP has completely transformed my child’s learning experience. They’ve gained skills, confidence, and a passion for science that I’ve never seen before!"</h4>
+                                    <h4>"STEM education has completely transformed my child’s learning experience. They’ve gained skills, confidence, and a passion for science that I’ve never seen before!"</h4>
                                     <i style="color:white">Aisha A., Parent</i> <br><br>
                                     <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
@@ -494,7 +494,7 @@
                                         <h3 style="color: white">What Our Community Says</h3>
                                     </div> --}}
                                     <br>
-                                    <h4>"The hands-on projects and expert mentorship at STEM-SSP prepared me for university and gave me a head start in my engineering degree."</h4>
+                                    <h4>"The hands-on projects and expert mentorship at STEM prepared me for university and gave me a head start in my engineering degree."</h4>
                                     <i style="color:white">Kwame A., Former Student</i> <br><br>
                                     <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
