@@ -44,7 +44,7 @@ class AdmissionController extends Controller
             'index_number' => 'required|digits:10|unique:students,index_number',
             'date_of_birth' => 'required|date_format:m/d/Y', // Validate the input format
             'email' => 'required|email|unique:students,email|unique:users,email',
-            'schools' => 'required|array|size:2',
+            'schools' => 'required|array|min:1|max:2',
             'schools.*' => 'exists:schools,id',
         ]);
 
