@@ -128,9 +128,8 @@
                         <div class="col-xl-12">
                         <div class="slider_text ">
                             <h3>Your gateway   <br>
-                                to enrolling <br> in the best   <br>
-                                STEM schools  <br>
-                                in Ghana.</h3>
+                                to enrolling <br> in STEM   <br>
+                               </h3>
                             <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
@@ -147,9 +146,8 @@
                         <div class="col-xl-12">
                         <div class="slider_text ">
                             <h3>Your gateway   <br>
-                                to enrolling <br> in the best   <br>
-                                STEM schools  <br>
-                                in Ghana.</h3>
+                                to enrolling <br> in STEM   <br>
+                               </h3>
                             <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
@@ -165,9 +163,8 @@
                         <div class="col-xl-12">
                         <div class="slider_text ">
                             <h3>Your gateway   <br>
-                                to enrolling <br> in the best   <br>
-                                STEM schools  <br>
-                                in Ghana.</h3>
+                                to enrolling <br> in STEM   <br>
+                               </h3>
                             <a href="#application-form" class="boxed-btn3">Select School</a>
                             <a href="#" class="boxed-btn4">How It Works</a>
                         </div>
