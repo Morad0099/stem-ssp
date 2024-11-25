@@ -565,7 +565,7 @@
 
 
     <!-- latest_coures_area_start  -->
-    <div id="application-form" data-scroll-index='1' class="admission_area" data-aos="fade" data-aos-duration="1000">
+    <div id="application-form" data-scroll-index="1" class="admission_area" data-aos="fade" data-aos-duration="1000">
         <div class="admission_inner">
             <div class="container">
                 <div class="row justify-content-end">
@@ -575,18 +575,43 @@
                             <form action="{{ route('apply') }}" method="POST">
                                 @csrf
                                 <div class="row">
+                                    <!-- First Name -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" name="index_number"
-                                                placeholder="10 Digits Index Number" required>
+                                            <input type="text" name="first_name" placeholder="First Name" required>
                                         </div>
                                     </div>
+                                    <!-- Middle Name -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="date" name="date_of_birth" placeholder="Date of Birth"
-                                                required>
+                                            <input type="text" name="middle_name" placeholder="Middle Name">
                                         </div>
                                     </div>
+                                    <!-- Last Name -->
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="text" name="last_name" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Phone Number -->
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="tel" name="phone_number" placeholder="Phone Number" required>
+                                        </div>
+                                    </div>
+                                    <!-- Index Number -->
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="text" name="index_number" placeholder="10 Digits Index Number" required maxlength="10">
+                                        </div>
+                                    </div>
+                                    <!-- Date of Birth -->
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+                                        </div>
+                                    </div>
+                                    <!-- Schools -->
                                     <div class="col-md-6">
                                         <div class="single_input custom-multi-select">
                                             <div class="custom-select-box">
@@ -602,17 +627,15 @@
                                                 </ul>
                                             </div>
                                             <input type="hidden" name="schools[]" class="hidden-input">
-                                            {{-- <small class="select-info" style="color: white">Select up to two schools</small> --}}
                                         </div>
                                     </div>
-
-
-                                    <div class="col-md-6" style="margin-top: 30px">
+                                    <!-- Email -->
+                                    <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="email" name="email" placeholder="Email Address"
-                                                required>
+                                            <input type="email" name="email" placeholder="Email Address" required>
                                         </div>
                                     </div>
+                                    <!-- Submit Button -->
                                     <div class="col-md-12">
                                         <div class="apply_btn">
                                             <button class="boxed-btn3" type="submit">Apply Now</button>
@@ -620,7 +643,6 @@
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -834,6 +856,11 @@
                 width: '100%' // Make it responsive
             });
         });
+
+        // Restrict index number input to 10 digits
+    document.querySelector('input[name="index_number"]').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+    });
 
         document.addEventListener("DOMContentLoaded", () => {
             const selectBox = document.querySelector(".custom-select-box");

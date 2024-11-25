@@ -36,21 +36,29 @@ class AdmissionController extends Controller
 
         // Validate request
         $request->validate([
+            'first_name' => 'required|string|max:255',
+            'middle_name' => 'nullable|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'phone_number' => 'required|digits:10',
             'index_number' => 'required|digits:10|unique:students,index_number',
             'date_of_birth' => 'required|date',
-            'email' => 'required|email|unique:students,email|unique:users,email', // Ensure no duplicate in both tables
-            'schools' => 'required|array|size:2', // Validate as an array with exactly 2 items
-            'schools.*' => 'exists:schools,id', // Validate each school ID exists in the schools table
+            'email' => 'required|email|unique:students,email|unique:users,email',
+            'schools' => 'required|array|size:2',
+            'schools.*' => 'exists:schools,id',
         ]);
 
         // Extract name from email
-        $name = ucfirst(explode('@', $request->email)[0]);
+        // $name = ucfirst(explode('@', $request->email)[0]);
 
         // Generate a random password
         $password = Str::random(8);
 
         // Create student
         $student = Student::create([
+            'first_name' => $request->first_name,
+            'middle_name' => $request->middle_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
             'index_number' => $request->index_number,
             'date_of_birth' => $request->date_of_birth,
             'email' => $request->email,
@@ -68,7 +76,7 @@ class AdmissionController extends Controller
 
         // Create a user account for login
         User::create([
-            'name' => $name,
+            'name' => $request->first_name,
             'email' => $request->email,
             'password' => $password,
             'role' => 'student', // Assign the role as 'student'
@@ -76,7 +84,7 @@ class AdmissionController extends Controller
 
         // Send login credentials via email
         Mail::send('emails.credentials', [
-            'name' => $name,
+            'name' => $request->first_name,
             'email' => $request->email,
             'password' => $password,
             'loginUrl' => route('login'),

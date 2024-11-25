@@ -14,6 +14,8 @@
                     <thead>
                         <tr>
                             <th>Index Number</th>
+                            <th>Name</th>
+                            <th>Phone Number</th>
                             <th>Email</th>
                             <th>Selected Schools</th>
                             <th>Assigned School</th>
@@ -24,6 +26,8 @@
                         @foreach($students as $student)
                             <tr>
                                 <td>{{ $student->index_number }}</td>
+                                <td>{{ $student->first_name }} {{ $student->middle_name ?? null}} {{ $student->last_name }}</td>
+                                <td>{{ $student->phone_number }}</td>
                                 <td>{{ $student->email }}</td>
                                 <td>
                                     @forelse($student->selectedSchools as $school)
