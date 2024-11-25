@@ -608,9 +608,10 @@
                                     <!-- Date of Birth -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+                                            <input type="text" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth (MM/DD/YYYY)" required>
                                         </div>
                                     </div>
+                                    
                                     <!-- Schools -->
                                     <div class="col-md-6">
                                         <div class="single_input custom-multi-select">
@@ -946,6 +947,9 @@
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <script>
         window.addEventListener('load', function() {
             AOS.init(); // Initialize AOS after load
@@ -996,6 +1000,13 @@
                 item.style.animationDelay = `${index * 0.1}s`;
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        flatpickr("#date_of_birth", {
+            dateFormat: "m/d/Y", // Format to match your placeholder
+            allowInput: true // Allow manual input
+        });
+    });
     </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     {{-- <script src="js/vendor/jquery-1.12.4.min.js"></script> --}}
