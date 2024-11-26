@@ -600,17 +600,17 @@
                                         </div>
                                     </div>
                                     <!-- Date of Birth -->
-                                    {{-- <div class="col-md-6">
-                                        <div class="single_input">
-                                            <input type="text" name="date_of_birth" id="date_of_birth" class="dob-input"
-                                            placeholder="Date of Birth (MM/DD/YYYY)" required>
-                                        </div>
-                                    </div>  --}}
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+                                            <input type="text" name="date_of_birth" class="dob-input"
+                                            placeholder="Date of Birth (MM/DD/YYYY)" required>
                                         </div>
-                                    </div>
+                                    </div> 
+                                    {{-- <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="text" name="date_of_birth" placeholder="Date of Birth" required>
+                                        </div>
+                                    </div> --}}
                                       
                                     
                                     <!-- Schools -->
