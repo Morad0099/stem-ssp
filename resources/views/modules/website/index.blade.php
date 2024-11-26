@@ -545,13 +545,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            {{-- <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="single_event d-flex align-items-center">
-                        {{-- <div class="date text-center">
+                        <div class="date text-center">
                             <span>03</span>
                             <p>Dec, 2020</p>
-                        </div> --}}
+                        </div>
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>Sign Up for a STEM-SSP Program</h4>
@@ -560,7 +560,7 @@
                                 century.</p>
                         </div>
                     </div>
-                    {{-- <div class="single_event d-flex align-items-center">
+                    <div class="single_event d-flex align-items-center">
                         <div class="date text-center">
                             <span>17</span>
                             <p>Dec, 2024</p>
@@ -571,13 +571,13 @@
                             </a>
                             <p>Discover hands-on workshops that cover robotics, coding, engineering design, and more.</p>
                         </div>
-                    </div> --}}
+                    </div>
 
                     <div class="single_event d-flex align-items-center">
-                        {{-- <div class="date text-center">
+                        <div class="date text-center">
                             <span>10</span>
                             <p>Dec, 2020</p>
-                        </div> --}}
+                        </div>
                         <div class="event_info">
                             <a href="event_details.html">
                                 <h4>Contact Us:</h4>
@@ -587,7 +587,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- recent_event_area_end  -->
