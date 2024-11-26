@@ -722,13 +722,13 @@
                 <div class="col-md-6">
                     <div class="single__news">
                         <div class="thumb">
-                            <a href="single-blog.html">
+                            <a href="/">
                                 <img src="img/stem/stem-8.jpeg" alt="">
                             </a>
                             <span class="badge">Group Study</span>
                         </div>
                         <div class="news_info">
-                            <a href="single-blog.html">
+                            <a href="/">
                                 <h4>Our curriculum focuses on real-world applications</h4>
                             </a>
                             {{-- <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
