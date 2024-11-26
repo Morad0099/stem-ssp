@@ -774,18 +774,18 @@
                         <div class="col-md-7">
                             <div class="footer_widget">
                                 <h3 class="footer_title">
-                                    Stay Updated
+                                    Leave us a Message
                                 </h3>
                                 <form action="#" class="newsletter_form">
                                     <input type="text" placeholder="Email Address">
-                                    <button type="submit">Subscribe Now</button>
+                                    <button type="submit">Send</button>
                                 </form>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-5">
                             <div class="footer_widget">
                                 <h3 class="footer_title">
-                                    Stay Updated
+                                    Follow us
                                 </h3>
                                 <div class="socail_links">
                                     <ul>
@@ -820,32 +820,32 @@
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                About Us
+                                Contact Us
                             </h3>
                             <ul>
-                                <li><a href="#">Online Learning</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Email: info@stem-ssp.com</a></li>
+                                <li><a href="#">Phone Number: </a></li>
+                                {{-- <li><a href="#">Careers</a></li>
                                 <li><a href="#">Press Center</a></li>
-                                <li><a href="#">Become an Instructor</a></li>
+                                <li><a href="#">Become an Instructor</a></li> --}}
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Campus
+                                Address
                             </h3>
                             <ul>
-                                <li><a href="#">Our Plans</a></li>
-                                <li><a href="#">Free Trial</a></li>
-                                <li><a href="#">Academic Solutions</a></li>
+                                <li><a href="#">Accra Stem Academy</a></li>
+                                <li><a href="#">East Legon</a></li>
+                                {{-- <li><a href="#">Academic Solutions</a></li>
                                 <li><a href="#">Business Solutions</a></li>
-                                <li><a href="#">Government Solutions</a></li>
+                                <li><a href="#">Government Solutions</a></li> --}}
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
+                    {{-- <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
                                 Study
@@ -871,7 +871,7 @@
                                 <li><a href="#">Register Activation Key</a></li>
                                 <li><a href="#">Site feedback</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
