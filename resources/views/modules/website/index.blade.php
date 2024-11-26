@@ -48,11 +48,11 @@
                         <div class="col-lg-12">
                             <div class="header_top_wrap d-flex justify-content-between align-items-center">
                                 <div class="text_wrap">
-                                    <p><span>+880166 253 232</span> <span>info@stem-ssp.com</span></p>
+                                    {{-- <p><span>+880166 253 232</span> <span>info@stem-ssp.com</span></p> --}}
                                 </div>
                                 <div class="text_wrap">
                                     <p><a href="{{ route('login') }}"> <i class="ti-user"></i> Sign In</a>
-                                         {{-- <a
+                                        {{-- <a
                                             href="{{ route('register') }}">Register</a></p> --}}
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div id="sticky-header" class="main-header-area" >
+            <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
@@ -126,31 +126,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                        <div class="slider_text ">
-                            <h3>Your gateway   <br>
-                                to enrolling <br> in STEM   <br>
-                               </h3>
-                            <a href="#application-form" class="boxed-btn3">Select School</a>
-                            <a href="#" class="boxed-btn4">How It Works</a>
-                        </div>
+                            <div class="slider_text ">
+                                <h3>Your gateway <br>
+                                    to enrolling <br> in STEM <br>
+                                </h3>
+                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#" class="boxed-btn4">How It Works</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!--/ single_carouse -->
             <!-- single_carouse -->
             <div class="single_slider  d-flex align-items-center slider_bg_2">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                        <div class="slider_text ">
-                            <h3>Your gateway   <br>
-                                to enrolling <br> in STEM   <br>
-                               </h3>
-                            <a href="#application-form" class="boxed-btn3">Select School</a>
-                            <a href="#" class="boxed-btn4">How It Works</a>
-                        </div>
+                            <div class="slider_text ">
+                                <h3>Your gateway <br>
+                                    to enrolling <br> in STEM <br>
+                                </h3>
+                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#" class="boxed-btn4">How It Works</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,13 +161,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                        <div class="slider_text ">
-                            <h3>Your gateway   <br>
-                                to enrolling <br> in STEM   <br>
-                               </h3>
-                            <a href="#application-form" class="boxed-btn3">Select School</a>
-                            <a href="#" class="boxed-btn4">How It Works</a>
-                        </div>
+                            <div class="slider_text ">
+                                <h3>Your gateway <br>
+                                    to enrolling <br> in STEM <br>
+                                </h3>
+                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#" class="boxed-btn4">How It Works</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,23 +194,27 @@
             <div class="row">
                 <div>
                     <p class="custom_paragraph" data-aos="fade-right">
-                        STEM education integrates four disciplines<span class="highlight"> Science</span>, <span class="highlight">Technology</span>, <span class="highlight">Engineering</span>, and <span class="highlight">Mathematics</span> into a cohesive learning model.
+                        STEM education integrates four disciplines<span class="highlight"> Science</span>, <span
+                            class="highlight">Technology</span>, <span class="highlight">Engineering</span>, and <span
+                            class="highlight">Mathematics</span> into a cohesive learning model.
                     </p>
                     <p class="custom_paragraph" data-aos="fade-left">
                         It goes beyond textbook knowledge, blending theory with practical, real-world applications.
                     </p>
                     <p class="custom_paragraph" data-aos="fade-up">
-                        Through collaborative projects, hands-on experiments, and interdisciplinary learning, students discover how these fields intersect and drive innovation.
+                        Through collaborative projects, hands-on experiments, and interdisciplinary learning, students
+                        discover how these fields intersect and drive innovation.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!--/ service_area_start  -->
 
     <!-- popular_program_area_start  -->
-    <div class="popular_program_area section__padding" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+    <div class="popular_program_area section__padding" data-aos="fade-up" data-aos-duration="800"
+        data-aos-delay="200">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -231,7 +235,8 @@
                     </nav>
                 </div>
             </div> --}}
-            <div class="tab-content" id="nav-tabContent" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="tab-content" id="nav-tabContent" data-aos="fade-up" data-aos-duration="800"
+                data-aos-delay="200">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                     aria-labelledby="nav-home-tab">
                     <div class="row">
@@ -243,7 +248,10 @@
                                 <div class="program__content">
                                     {{-- <span>Unlocking Problem-Solving Potential</span> --}}
                                     <h4>Unlocking Problem-Solving Potential</h4>
-                                    <p>STEM education teaches students how to approach challenges logically and methodically. Whether designing an energy-efficient car or solving a complex mathematical equation, students develop skills to think critically and find solutions to problems—skills they will use for life.</p>
+                                    <p>STEM education teaches students how to approach challenges logically and
+                                        methodically. Whether designing an energy-efficient car or solving a complex
+                                        mathematical equation, students develop skills to think critically and find
+                                        solutions to problems—skills they will use for life.</p>
                                 </div>
                             </div>
                         </div>
@@ -255,11 +263,14 @@
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Preparing for Future Careers</h4>
-                                    <p>The world is changing, and so is the job market. Careers in STEM fields are among the most lucrative and in-demand globally, with professions ranging from data scientists to aerospace engineers. STEM education equips students with the skills and knowledge to thrive in these high-growth industries.</p>
+                                    <p>The world is changing, and so is the job market. Careers in STEM fields are among
+                                        the most lucrative and in-demand globally, with professions ranging from data
+                                        scientists to aerospace engineers. STEM education equips students with the
+                                        skills and knowledge to thrive in these high-growth industries.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6"  data-aos="fade-down-right" data-aos-duration="1500">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-down-right" data-aos-duration="1500">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/Accra _STEM.jpg" alt="">
@@ -267,43 +278,55 @@
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Encouraging Creativity and Innovation</h4>
-                                    <p>STEM isn’t just about solving problems—it’s about thinking creatively to innovate. Whether it’s building a robot or developing a mobile app, STEM inspires students to experiment, prototype, and turn their ideas into reality.</p>
+                                    <p>STEM isn’t just about solving problems—it’s about thinking creatively to
+                                        innovate. Whether it’s building a robot or developing a mobile app, STEM
+                                        inspires students to experiment, prototype, and turn their ideas into reality.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/stem-7.jpeg" alt="">
+                                    <img src="img/stem/Accra_STEM2.jpeg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Promoting Inclusivity and Diversity</h4>
-                                    <p>STEM education breaks down barriers by providing opportunities for everyone, regardless of gender, ethnicity, or background. By encouraging participation from underrepresented groups, STEM ensures a diverse and inclusive workforce capable of tackling global challenges.</p>
+                                    <p>STEM education breaks down barriers by providing opportunities for everyone,
+                                        regardless of gender, ethnicity, or background. By encouraging participation
+                                        from underrepresented groups, STEM ensures a diverse and inclusive workforce
+                                        capable of tackling global challenges.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/stem-9.jpeg" alt="">
+                                    <img src="img/stem/Accra _STEM.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Building Teamwork and Communication Skills</h4>
-                                    <p>Collaboration is at the heart of STEM education. Students work together on projects, learning to communicate effectively and respect diverse perspectives. These skills are invaluable not just in STEM careers but in all aspects of life.</p>
+                                    <p>Collaboration is at the heart of STEM education. Students work together on
+                                        projects, learning to communicate effectively and respect diverse perspectives.
+                                        These skills are invaluable not just in STEM careers but in all aspects of life.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img style="height: 500px" src="img/stem/stem-5.jpeg" alt="">
+                                    <img src="img/stem/Accra_STEM2.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Nurturing Curiosity and Lifelong Learning</h4>
-                                    <p>STEM education ignites curiosity. It encourages students to ask questions, explore the unknown, and develop a love for discovery. This mindset fosters lifelong learning, ensuring students remain adaptable and innovative throughout their lives.</p>
+                                    <p>STEM education ignites curiosity. It encourages students to ask questions,
+                                        explore the unknown, and develop a love for discovery. This mindset fosters
+                                        lifelong learning, ensuring students remain adaptable and innovative throughout
+                                        their lives.</p>
                                 </div>
                             </div>
                         </div>
@@ -469,17 +492,24 @@
                         <div class="coures_info">
                             <div class="section_title white_text">
                                 <h3>Why Choose STEM?</h3>
-                                <p>With STEM, we believe every student has the potential to be a change-maker. Our programs are designed to inspire, challenge, and prepare students for a dynamic future. Here’s what sets us apart: <br>
-                                    • Hands-On Learning Experiences: Our curriculum focuses on real-world applications, ensuring students gain practical skills. <br>
-                                    • Expert Guidance: Our dedicated educators and mentors bring years of experience and a passion for teaching. <br>
-                                    • Inclusive Opportunities: We strive to make STEM accessible to all, creating a supportive and diverse learning environment.</p>
+                                <p>With STEM, we believe every student has the potential to be a change-maker. Our
+                                    programs are designed to inspire, challenge, and prepare students for a dynamic
+                                    future. Here’s what sets us apart: <br>
+                                    • Hands-On Learning Experiences: Our curriculum focuses on real-world applications,
+                                    ensuring students gain practical skills. <br>
+                                    • Expert Guidance: Our dedicated educators and mentors bring years of experience and
+                                    a passion for teaching. <br>
+                                    • Inclusive Opportunities: We strive to make STEM accessible to all, creating a
+                                    supportive and diverse learning environment.</p>
                             </div>
                             <div class="coures_wrap d-flex">
                                 <div class="single_wrap">
-                                    <div >
+                                    <div>
                                         <h3 style="color: white">What Our Community Says</h3>
                                     </div>
-                                    <h4>"STEM education has completely transformed my child’s learning experience. They’ve gained skills, confidence, and a passion for science that I’ve never seen before!"</h4>
+                                    <h4>"STEM education has completely transformed my child’s learning experience.
+                                        They’ve gained skills, confidence, and a passion for science that I’ve never
+                                        seen before!"</h4>
                                     <i style="color:white">Aisha A., Parent</i> <br><br>
                                     {{-- <a href="#application-form" class="boxed-btn5">Apply NOw</a> --}}
                                 </div>
@@ -488,7 +518,8 @@
                                         <h3 style="color: white">What Our Community Says</h3>
                                     </div> --}}
                                     <br>
-                                    <h4>"The hands-on projects and expert mentorship at STEM prepared me for university and gave me a head start in my engineering degree."</h4>
+                                    <h4>"The hands-on projects and expert mentorship at STEM prepared me for university
+                                        and gave me a head start in my engineering degree."</h4>
                                     <i style="color:white">Kwame A., Former Student</i> <br><br>
                                     {{-- <a href="#application-form" class="boxed-btn5">Apply NOw</a> --}}
                                 </div>
@@ -508,7 +539,9 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Join the STEM Movement Today</h3>
-                        <p>Are you ready to unlock the potential within you or your child? STEM education is the key to a world of opportunities, innovation, and impact. At STEM-SSP, we’re committed to guiding students every step of the way.</p>
+                        <p>Are you ready to unlock the potential within you or your child? STEM education is the key to
+                            a world of opportunities, innovation, and impact. At STEM-SSP, we’re committed to guiding
+                            students every step of the way.</p>
                     </div>
                 </div>
             </div>
@@ -523,7 +556,8 @@
                             <a href="event_details.html">
                                 <h4>Sign Up for a STEM-SSP Program</h4>
                             </a>
-                            <p>Empower yourself or your child with the tools to innovate and succeed in the 21st century.</p>
+                            <p>Empower yourself or your child with the tools to innovate and succeed in the 21st
+                                century.</p>
                         </div>
                     </div>
                     {{-- <div class="single_event d-flex align-items-center">
@@ -538,7 +572,7 @@
                             <p>Discover hands-on workshops that cover robotics, coding, engineering design, and more.</p>
                         </div>
                     </div> --}}
-                    
+
                     <div class="single_event d-flex align-items-center">
                         {{-- <div class="date text-center">
                             <span>10</span>
@@ -548,7 +582,8 @@
                             <a href="event_details.html">
                                 <h4>Contact Us:</h4>
                             </a>
-                            <p>Got questions? Reach out to our team at info@stem-ssp.com or call us at +233-XXX-XXX-XXX.</p>
+                            <p>Got questions? Reach out to our team at info@stem-ssp.com or call us at +233-XXX-XXX-XXX.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -559,20 +594,22 @@
 
 
     <!-- latest_coures_area_start  -->
-    <div id="application-form" data-scroll-index="1" class="admission_area" data-aos="fade" data-aos-duration="1000">
+    <div id="application-form" data-scroll-index="1" class="admission_area" data-aos="fade"
+        data-aos-duration="1000">
         <div class="admission_inner">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-lg-7">
                         <div class="admission_form">
-                            <h3>Apply for Admission</h3>
+                            <h3>Enroll to STEM</h3>
                             <form action="{{ route('apply') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <!-- First Name -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" name="first_name" placeholder="First Name" required>
+                                            <input type="text" name="first_name" placeholder="First Name"
+                                                required>
                                         </div>
                                     </div>
                                     <!-- Middle Name -->
@@ -590,29 +627,31 @@
                                     <!-- Phone Number -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="tel" name="phone_number" placeholder="Phone Number" required>
+                                            <input type="tel" name="phone_number" placeholder="Phone Number"
+                                                required>
                                         </div>
                                     </div>
                                     <!-- Index Number -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" name="index_number" placeholder="10 Digits Index Number" required maxlength="10">
+                                            <input type="text" name="index_number"
+                                                placeholder="10 Digits Index Number" required maxlength="10">
                                         </div>
                                     </div>
                                     <!-- Date of Birth -->
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" name="date_of_birth" class="dob-input"
-                                            placeholder="Date of Birth (MM/DD/YYYY)" required>
+                                                placeholder="Date of Birth (MM/DD/YYYY)" required>
                                         </div>
-                                    </div> 
+                                    </div>
                                     {{-- <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" name="date_of_birth" placeholder="Date of Birth" required>
                                         </div>
                                     </div> --}}
-                                      
-                                    
+
+
                                     <!-- Schools -->
                                     {{-- <div class="col-md-6">
                                         <div class="single_input custom-multi-select">
@@ -635,23 +674,25 @@
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             {{-- <label for="school">Selected School</label> --}}
-                                            <input type="text" id="school" value="{{ $schools[0]->sch_name }} " readonly class="form-control">
+                                            <input type="text" id="school" value="{{ $schools[0]->sch_name }} "
+                                                readonly class="form-control">
                                             <!-- Hidden input to send the school ID as part of the schools array -->
                                             <input type="hidden" name="schools[]" value="{{ $schools[0]->id }}">
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                     <!-- Email -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="email" name="email" placeholder="Email Address" required>
+                                            <input type="email" name="email" placeholder="Email Address"
+                                                required>
                                         </div>
                                     </div>
                                     <!-- Submit Button -->
                                     <div class="col-md-12">
                                         <div class="apply_btn">
-                                            <button class="boxed-btn3" type="submit">Apply Now</button>
+                                            <button class="boxed-btn3" type="submit">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -708,7 +749,8 @@
                         </div>
                         <div class="news_info">
                             <a href="/">
-                                <h4>Our dedicated educators and mentors bring years of experience and a passion for teaching.</h4>
+                                <h4>Our dedicated educators and mentors bring years of experience and a passion for
+                                    teaching.</h4>
                             </a>
                             {{-- <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> May 10,
                                     2020</span>
@@ -871,9 +913,9 @@
         });
 
         // Restrict index number input to 10 digits
-    document.querySelector('input[name="index_number"]').addEventListener('input', function (e) {
-        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
-    });
+        document.querySelector('input[name="index_number"]').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+        });
 
         document.addEventListener("DOMContentLoaded", () => {
             const selectBox = document.querySelector(".custom-select-box");
@@ -961,8 +1003,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
 
     <script>
@@ -1016,20 +1059,20 @@
             });
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-        flatpickr("#date_of_birth", {
-            dateFormat: "m/d/Y", // Format to match your placeholder
-            allowInput: true // Allow manual input
-        });
-        $(document).ready(function () {
-  $('.dob-input').datepicker({
-    format: "mm/dd/yyyy", // Format: MM/DD/YYYY
-    endDate: "today", // Disable future dates
-    autoclose: true, // Close picker after selection
-  });
-});
+        document.addEventListener("DOMContentLoaded", function() {
+            flatpickr("#date_of_birth", {
+                dateFormat: "m/d/Y", // Format to match your placeholder
+                allowInput: true // Allow manual input
+            });
+            $(document).ready(function() {
+                $('.dob-input').datepicker({
+                    format: "mm/dd/yyyy", // Format: MM/DD/YYYY
+                    endDate: "today", // Disable future dates
+                    autoclose: true, // Close picker after selection
+                });
+            });
 
-    });
+        });
     </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     {{-- <script src="js/vendor/jquery-1.12.4.min.js"></script> --}}

@@ -3791,7 +3791,7 @@ h3 {
 /* line 137, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_course.scss */
 .admission_area::before {
   position: absolute;
-  background-image: url(../img/stem/stem-2.jpeg);
+  background-image: url(../img/stem/Accra_STEM2.jpg);
   right: 0;
   content: '';
   width: 60%;
@@ -3853,7 +3853,7 @@ h3 {
   content: '';
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/stem/stem-5.jpeg);
+  background-image: url(../img/stem/Accra_STEM2.jpeg);
 }
 
 @media (max-width: 767px) {
