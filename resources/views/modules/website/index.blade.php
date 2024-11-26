@@ -628,7 +628,7 @@
                                     <div class="col-md-6">
                                         <div class="single_input">
                                             {{-- <label for="school">Selected School</label> --}}
-                                            <input type="text" id="school" value="{{ $schools[0]->sch_name }} " readonly class="form-control">
+                                            <input type="text" id="school" value="{{ $schools[0]->sch_name }} ({{ $schools[0]->gender }}) REGION: {{ $schools[0]->region }}" readonly class="form-control">
                                             <!-- Hidden input to send the school ID as part of the schools array -->
                                             <input type="hidden" name="schools[]" value="{{ $schools[0]->id }}">
                                         </div>
