@@ -608,7 +608,7 @@
                                     </div>  --}}
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="text" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth" required>
+                                            <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
                                         </div>
                                     </div>
                                       
