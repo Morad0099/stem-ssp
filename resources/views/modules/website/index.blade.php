@@ -777,7 +777,7 @@
                                     Leave us a Message
                                 </h3>
                                 <form action="#" class="newsletter_form">
-                                    <input type="text" placeholder="Email Address">
+                                    <input type="area" placeholder="Leave message">
                                     <button type="submit">Send</button>
                                 </form>
                             </div>
