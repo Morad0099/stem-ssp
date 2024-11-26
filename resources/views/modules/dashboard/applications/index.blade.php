@@ -6,6 +6,44 @@
 <div class="container-fluid pt-4 px-4">
     <div class="bg-light rounded p-4">
         <h6 class="mb-4">Manage Applications</h6>
+
+        <!-- Filters and Export Button -->
+        <div class="row align-items-center mb-4">
+            <!-- Filters Section -->
+            <div class="col-md-9">
+                <form method="GET" action="{{ route('applications.index') }}" class="d-flex align-items-center gap-2">
+                    <!-- Start Date Filter -->
+                    <div class="form-group me-2">
+                        <label for="start_date">Start Date</label>
+                        <input type="date" name="start_date" class="form-control" placeholder="Start Date" value="{{ request('start_date') }}">
+                    </div>
+                    <!-- End Date Filter -->
+                    <div class="form-group me-2">
+                        <label for="start_date">End Date</label>
+                        <input type="date" name="end_date" class="form-control" placeholder="End Date" value="{{ request('end_date') }}">
+                    </div>
+                    <!-- Assigned School Filter -->
+                    {{-- <div class="form-group me-2">
+                        <select name="school_assigned_id" class="form-control">
+                            <option value="">All Schools</option>
+                            @foreach ($schools as $school)
+                                <option value="{{ $school->id }}" {{ request('school_assigned_id') == $school->id ? 'selected' : '' }}>
+                                    {{ $school->sch_name }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div> --}}
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </div>
+            <!-- Export Button Section -->
+            <div class="col-md-3 text-end">
+                <a href="{{ route('students.export') }}" class="btn btn-success">Export to Excel</a>
+            </div>
+        </div>
+
+        <!-- Table Section -->
         <div class="table-responsive">
             @if($students->isEmpty())
                 <p class="text-center my-4">No student applications found.</p>
@@ -20,13 +58,14 @@
                             <th>Selected Schools</th>
                             <th>Assigned School</th>
                             <th>Action</th>
+
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($students as $student)
                             <tr>
                                 <td>{{ $student->index_number }}</td>
-                                <td>{{ $student->first_name }} {{ $student->middle_name ?? null}} {{ $student->last_name }}</td>
+                                <td>{{ $student->first_name }} {{ $student->middle_name ?? '' }} {{ $student->last_name }}</td>
                                 <td>{{ $student->phone_number }}</td>
                                 <td>{{ $student->email }}</td>
                                 <td>
@@ -50,6 +89,7 @@
                                         <button type="submit" class="btn btn-primary btn-sm mt-2">Assign</button>
                                     </form>
                                 </td>
+
                             </tr>
                         @endforeach
                     </tbody>

@@ -47,7 +47,7 @@ html {
 .custom_service_area .custom_paragraph:first-of-type {
   font-weight: bold;
   font-size: 18px;
-  color: #0056b3; /* A distinct color for the first paragraph */
+  /* color: #0056b3;  */
 }
 
 .custom_service_area .custom_paragraph:last-of-type {
@@ -70,7 +70,7 @@ html {
 .custom_service_area p:first-of-type {
   font-weight: bold;
   font-size: 18px;
-  color: #0056b3;
+  /* color: #0056b3; */
 }
 
 /* Responsive Adjustments */

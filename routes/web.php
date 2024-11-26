@@ -1,5 +1,6 @@
 <?php
 
+use App\Exports\StudentsExport;
 use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ProfileController;
@@ -7,6 +8,7 @@ use App\Http\Controllers\RouteController;
 use App\Http\Controllers\StudentApplicationController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Maatwebsite\Excel\Facades\Excel;
 
 Route::get('/', [AdmissionController::class, 'index'])->name('index');
 Route::post('/apply', [AdmissionController::class, 'apply'])->name('apply');
@@ -25,6 +27,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
     Route::get('/student/applications', [StudentApplicationController::class, 'index'])->name('student.applications');
+    Route::get('/students/export', function () {
+        return Excel::download(new StudentsExport, 'students.xlsx');
+    })->name('students.export');
 });
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

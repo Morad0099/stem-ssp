@@ -9,21 +9,50 @@ use Illuminate\Support\Facades\Mail;
 
 class ApplicationController extends Controller
 {
-    public function index()
-    {
-        $students = Student::with('selectedSchools', 'assignedSchool')->where('school_assigned_id', null)->get();
-        $schools = Schools::all();
+    public function index(Request $request)
+{
+    // Start query with base filters
+    $query = Student::with('selectedSchools', 'assignedSchool')
+                    ->where('school_assigned_id', null);
 
-        return view('modules.dashboard.applications.index', compact('students', 'schools'));
+    // Filter by date range
+    if ($request->start_date && $request->end_date) {
+        $query->whereBetween('created_at', [$request->start_date, $request->end_date]);
     }
 
-    public function all()
-    {
-        $students = Student::with('selectedSchools', 'assignedSchool')->where('school_assigned_id', '!=', null)->get();
-        $schools = Schools::all();
-
-        return view('modules.dashboard.applications.all', compact('students', 'schools'));
+    // Filter by school
+    if ($request->has('school_assigned_id') && $request->school_assigned_id != '') {
+        $query->where('school_assigned_id', $request->school_assigned_id);
     }
+
+    // Retrieve filtered students
+    $students = $query->get();
+    $schools = Schools::all();
+
+    return view('modules.dashboard.applications.index', compact('students', 'schools'));
+}
+
+
+public function all(Request $request)
+{
+    $query = Student::with('selectedSchools', 'assignedSchool')->where('school_assigned_id', '!=', null);
+
+    // Filter by date range
+    if ($request->start_date && $request->end_date) {
+        $query->whereBetween('created_at', [$request->start_date, $request->end_date]);
+    }
+
+    // Filter by assigned school
+    if ($request->has('school_assigned_id') && $request->school_assigned_id != '') {
+        $query->where('school_assigned_id', $request->school_assigned_id);
+    }
+
+    $students = $query->get();
+    $schools = Schools::all();
+
+    return view('modules.dashboard.applications.all', compact('students', 'schools'));
+}
+
 
     public function assignSchool(Request $request)
     {
