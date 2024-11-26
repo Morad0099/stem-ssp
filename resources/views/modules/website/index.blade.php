@@ -130,7 +130,7 @@
                                 <h3>Your gateway <br>
                                     to enrolling <br> in STEM <br>
                                 </h3>
-                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 <a href="#" class="boxed-btn4">How It Works</a>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                                 <h3>Your gateway <br>
                                     to enrolling <br> in STEM <br>
                                 </h3>
-                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 <a href="#" class="boxed-btn4">How It Works</a>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 <h3>Your gateway <br>
                                     to enrolling <br> in STEM <br>
                                 </h3>
-                                <a href="#application-form" class="boxed-btn3">Select School</a>
+                                <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 <a href="#" class="boxed-btn4">How It Works</a>
                             </div>
                         </div>
