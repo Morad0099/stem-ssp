@@ -238,7 +238,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/stem-8.jpeg" alt="">
+                                    <img src="img/stem/Accra_STEM2.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Unlocking Problem-Solving Potential</span> --}}
@@ -250,7 +250,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1200">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/stem-4.jpeg" alt="">
+                                    <img src="img/stem/Accra_STEM3.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -262,7 +262,7 @@
                         <div class="col-lg-4 col-md-6"  data-aos="fade-down-right" data-aos-duration="1500">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/stem-6.jpeg" alt="">
+                                    <img src="img/stem/Accra _STEM.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-7.jpeg" alt="">
@@ -283,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img src="img/stem/stem-9.jpeg" alt="">
@@ -295,7 +295,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">>
+                        <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
                                     <img style="height: 500px" src="img/stem/stem-5.jpeg" alt="">
@@ -604,7 +604,7 @@
                                         <div class="single_input">
                                             <input type="text" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth (MM/DD/YYYY)" required>
                                         </div>
-                                    </div>
+                                    </div> 
                                     
                                     <!-- Schools -->
                                     {{-- <div class="col-md-6">
