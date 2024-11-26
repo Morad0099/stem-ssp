@@ -600,18 +600,17 @@
                                         </div>
                                     </div>
                                     <!-- Date of Birth -->
+                                    {{-- <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="text" name="date_of_birth" id="date_of_birth" class="dob-input"
+                                            placeholder="Date of Birth (MM/DD/YYYY)" required>
+                                        </div>
+                                    </div>  --}}
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                          <input
-                                            type="text"
-                                            name="date_of_birth"
-                                            id="date_of_birth"
-                                            class="dob-input"
-                                            placeholder="Date of Birth (MM/DD/YYYY)"
-                                            required
-                                          />
+                                            <input type="text" name="date_of_birth" placeholder="Date of Birth" required>
                                         </div>
-                                      </div>
+                                    </div>
                                       
                                     
                                     <!-- Schools -->
@@ -1020,14 +1019,6 @@
             allowInput: true // Allow manual input
         });
     });
-    document.addEventListener("DOMContentLoaded", function () {
-  const dobInput = document.getElementById("date_of_birth");
-
-  if (!dobInput.placeholder) {
-    dobInput.placeholder = "Date of Birth (MM/DD/YYYY)";
-  }
-});
-
     </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     {{-- <script src="js/vendor/jquery-1.12.4.min.js"></script> --}}
