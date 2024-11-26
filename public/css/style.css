@@ -3892,14 +3892,11 @@ h3 {
 }
 
 /* line 209, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_course.scss */
-.admission_area .admission_form .single_input input::placeholder,
-.admission_area .admission_form .single_input textarea::placeholder {
-  color: #fff; /* Ensure the color contrasts with the background */
+.admission_area .admission_form .single_input input::placeholder, .admission_area .admission_form .single_input textarea::placeholder {
+  color: #fff;
   font-size: 14px;
   font-weight: 300;
-  opacity: 1; /* Ensure visibility on mobile browsers */
 }
-
 
 /* line 214, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_course.scss */
 .admission_area .admission_form .single_input input:focus, .admission_area .admission_form .single_input textarea:focus {
@@ -3911,32 +3908,38 @@ h3 {
   height: 110px;
 }
 
-.admission_area .admission_form .single_input input::-webkit-input-placeholder,
-.admission_area .admission_form .single_input textarea::-webkit-input-placeholder {
+/* General placeholder styles */
+.dob-input::placeholder {
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 1; /* Ensure visibility */
+}
+
+/* WebKit-specific styles */
+.dob-input::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
 }
 
-/* For Microsoft Edge and Internet Explorer */
-.admission_area .admission_form .single_input input:-ms-input-placeholder,
-.admission_area .admission_form .single_input textarea:-ms-input-placeholder {
+/* Microsoft Edge and Internet Explorer */
+.dob-input:-ms-input-placeholder {
   color: #fff;
   opacity: 1;
 }
 
-/* For Firefox */
-.admission_area .admission_form .single_input input::-moz-placeholder,
-.admission_area .admission_form .single_input textarea::-moz-placeholder {
+/* Firefox */
+.dob-input::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
 
-/* For older versions of Firefox */
-.admission_area .admission_form .single_input input:-moz-placeholder,
-.admission_area .admission_form .single_input textarea:-moz-placeholder {
+/* Older versions of Firefox */
+.dob-input:-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
+
 
 /*=================== contact banner start ====================*/
 /* line 3, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_contact.scss */
