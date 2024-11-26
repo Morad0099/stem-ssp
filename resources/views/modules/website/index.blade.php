@@ -961,6 +961,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
 
     <script>
         window.addEventListener('load', function() {
@@ -1018,6 +1021,14 @@
             dateFormat: "m/d/Y", // Format to match your placeholder
             allowInput: true // Allow manual input
         });
+        $(document).ready(function () {
+  $('.dob-input').datepicker({
+    format: "mm/dd/yyyy", // Format: MM/DD/YYYY
+    endDate: "today", // Disable future dates
+    autoclose: true, // Close picker after selection
+  });
+});
+
     });
     </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
