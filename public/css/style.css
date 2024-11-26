@@ -59,13 +59,13 @@ html {
   font-weight: bold;
 }
 
-.custom_service_area p {
+/* .custom_service_area p {
   font-size: 16px;
   line-height: 1.8;
-  color: #444;
+  color: #232637;
   margin-bottom: 15px;
   text-align: justify;
-}
+} */
 
 .custom_service_area p:first-of-type {
   font-weight: bold;

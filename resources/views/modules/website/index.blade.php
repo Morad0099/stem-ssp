@@ -194,10 +194,10 @@
             <div class="row">
                 <div>
                     <p class="custom_paragraph" data-aos="fade-right">
-                        STEM education integrates four disciplines<span class="highlight"> Science</span>, <span
-                            class="highlight">Technology</span>, <span class="highlight">Engineering</span>, and <span
+                        STEM education integrates four disciplines<span style="margin-left: 20px" class="highlight">Science</span>, <span
+                        class="highlight">Technology</span>, <span class="highlight">Engineering</span>, and <span
                             class="highlight">Mathematics</span> into a cohesive learning model.
-                    </p>
+                    </p> <br>
                     <p class="custom_paragraph" data-aos="fade-left">
                         It goes beyond textbook knowledge, blending theory with practical, real-world applications.
                     </p>
