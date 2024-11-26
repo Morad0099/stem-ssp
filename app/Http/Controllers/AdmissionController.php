@@ -33,7 +33,11 @@ class AdmissionController extends Controller
         }
 
         // Manually replace the request value for validation
-        $request->merge(['schools' => $schools]);
+        // $request->merge(['schools' => $schools]);
+
+        // Force the schools input to be an array
+    $request->merge(['schools' => (array) $request->input('schools')]);
+
 
         // Validate request
         $request->validate([
@@ -69,6 +73,8 @@ class AdmissionController extends Controller
         ]);
 
         // Attach selected schools
+        $schools = (array) $request->input('schools'); // Force schools to be an array
+
         foreach ($schools as $schoolId) {
             DB::table('student_school_selections')->insert([
                 'student_id' => $student->id,

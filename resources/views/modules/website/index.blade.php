@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon_11.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
     <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script>
@@ -69,7 +69,7 @@
                                     <div class="logo">
                                         <a href="/">
                                             {{-- style="width: 100px" --}}
-                                            <img src="img/logo_site.png" alt="">
+                                            <img src="img/logo_212.png" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -244,7 +244,6 @@
                                     {{-- <span>Unlocking Problem-Solving Potential</span> --}}
                                     <h4>Unlocking Problem-Solving Potential</h4>
                                     <p>STEM education teaches students how to approach challenges logically and methodically. Whether designing an energy-efficient car or solving a complex mathematical equation, students develop skills to think critically and find solutions to problems—skills they will use for life.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +256,6 @@
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Preparing for Future Careers</h4>
                                     <p>The world is changing, and so is the job market. Careers in STEM fields are among the most lucrative and in-demand globally, with professions ranging from data scientists to aerospace engineers. STEM education equips students with the skills and knowledge to thrive in these high-growth industries.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +268,6 @@
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Encouraging Creativity and Innovation</h4>
                                     <p>STEM isn’t just about solving problems—it’s about thinking creatively to innovate. Whether it’s building a robot or developing a mobile app, STEM inspires students to experiment, prototype, and turn their ideas into reality.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +280,6 @@
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Promoting Inclusivity and Diversity</h4>
                                     <p>STEM education breaks down barriers by providing opportunities for everyone, regardless of gender, ethnicity, or background. By encouraging participation from underrepresented groups, STEM ensures a diverse and inclusive workforce capable of tackling global challenges.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +292,6 @@
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Building Teamwork and Communication Skills</h4>
                                     <p>Collaboration is at the heart of STEM education. Students work together on projects, learning to communicate effectively and respect diverse perspectives. These skills are invaluable not just in STEM careers but in all aspects of life.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +304,6 @@
                                     {{-- <span>Agriculture</span> --}}
                                     <h4>Nurturing Curiosity and Lifelong Learning</h4>
                                     <p>STEM education ignites curiosity. It encourages students to ask questions, explore the unknown, and develop a love for discovery. This mindset fosters lifelong learning, ensuring students remain adaptable and innovative throughout their lives.</p>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
@@ -455,13 +449,13 @@
                 </div>
             </div>
 
-            {{-- <div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="course_all_btn text-center">
-                        <a href="Courses.html" class="boxed-btn4">View All course</a>
+                        <a href="#application-form" class="boxed-btn4">Enroll Now</a>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
     <!-- popular_program_area_end -->
@@ -487,7 +481,7 @@
                                     </div>
                                     <h4>"STEM education has completely transformed my child’s learning experience. They’ve gained skills, confidence, and a passion for science that I’ve never seen before!"</h4>
                                     <i style="color:white">Aisha A., Parent</i> <br><br>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <a href="#application-form" class="boxed-btn5">Apply NOw</a> --}}
                                 </div>
                                 <div class="single_wrap">
                                     {{-- <div >
@@ -496,7 +490,7 @@
                                     <br>
                                     <h4>"The hands-on projects and expert mentorship at STEM prepared me for university and gave me a head start in my engineering degree."</h4>
                                     <i style="color:white">Kwame A., Former Student</i> <br><br>
-                                    <a href="#application-form" class="boxed-btn5">Apply NOw</a>
+                                    {{-- <a href="#application-form" class="boxed-btn5">Apply NOw</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -613,7 +607,7 @@
                                     </div>
                                     
                                     <!-- Schools -->
-                                    <div class="col-md-6">
+                                    {{-- <div class="col-md-6">
                                         <div class="single_input custom-multi-select">
                                             <div class="custom-select-box">
                                                 <span class="placeholder">Select up to two schools</span>
@@ -629,7 +623,18 @@
                                             </div>
                                             <input type="hidden" name="schools[]" class="hidden-input">
                                         </div>
+                                    </div> --}}
+
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            {{-- <label for="school">Selected School</label> --}}
+                                            <input type="text" id="school" value="{{ $schools[0]->sch_name }} ({{ $schools[0]->gender }}) REGION: {{ $schools[0]->region }}" readonly class="form-control">
+                                            <!-- Hidden input to send the school ID as part of the schools array -->
+                                            <input type="hidden" name="schools[]" value="{{ $schools[0]->id }}">
+                                        </div>
                                     </div>
+                                    
+                                    
                                     <!-- Email -->
                                     <div class="col-md-6">
                                         <div class="single_input">
