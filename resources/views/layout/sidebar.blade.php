@@ -1,7 +1,8 @@
 <div class="sidebar pe-4 pb-3">
     <nav class="navbar bg-light navbar-light">
         <a href="{{ route('dashboard') }}" class="navbar-brand mx-4 mb-3">
-            <h3 class="text-primary">STEM SSP</h3>
+            <img src="img/logo_212.png" alt="">
+            
         </a>
         <div class="d-flex align-items-center ms-4 mb-4">
             <div class="position-relative">
@@ -22,10 +23,10 @@
             <!-- For Admin -->
             @if(Auth::user()->role == 'admin')
                 <a href="{{ route('applications.index') }}" class="nav-item nav-link {{ request()->is('applications') ? 'active' : '' }}">
-                    <i class="fa fa-users me-2"></i> Applications
+                    <i class="fa fa-users me-2"></i> All Applications
                 </a>
                 <a href="{{ route('applications.all') }}" class="nav-item nav-link {{ request()->is('applications/all') ? 'active' : '' }}">
-                    <i class="fa fa-users me-2"></i>All Applications
+                    <i class="fa fa-users me-2"></i>Assigned Students
                 </a>
                 <a href="{{ route('users.index') }}" class="nav-item nav-link {{ request()->is('users*') ? 'active' : '' }}">
                     <i class="fa fa-users me-2"></i>User Management

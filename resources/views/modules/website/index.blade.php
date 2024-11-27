@@ -303,7 +303,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra _STEM.jpg" alt="">
+                                    <img src="img/stem/Accra_High5.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -318,7 +318,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_STEM2.jpg" alt="">
+                                    <img src="img/stem/Accra_High1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -723,7 +723,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img src="img/stem/stem-8.jpeg" alt="">
+                                <img src="img/stem/Accra_High5.jpg" alt="">
                             </a>
                             <span class="badge">Group Study</span>
                         </div>
@@ -743,7 +743,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img src="img/stem/stem-6.jpeg" alt="">
+                                <img src="img/stem/Accra_High4.jpg" alt="">
                             </a>
                             <span class="badge bandge_2">Class Life</span>
                         </div>

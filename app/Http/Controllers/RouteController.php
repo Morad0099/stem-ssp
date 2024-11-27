@@ -17,7 +17,7 @@ class RouteController extends Controller
     $todayApplications = Student::whereDate('created_at', today())->count();
     $totalApplications = Student::count();
     $totalSchoolsApplied = Schools::whereHas('students')->count();
-    $acceptedApplications = Student::where('status', 'Accepted')->count();
+    $acceptedApplications = Student::whereNotNull('school_assigned_id')->count();
 
     // Check if the user is an admin
     if ($user->role == 'admin') {
