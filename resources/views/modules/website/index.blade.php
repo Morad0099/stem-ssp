@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
     <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script>
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -243,7 +244,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_STEM2.jpg" alt="">
+                                    <img data-src="img/stem/Accra_STEM2.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Unlocking Problem-Solving Potential</span> --}}
@@ -258,7 +259,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1200">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_STEM3.jpg" alt="">
+                                    <img data-src="img/stem/Accra_STEM3.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -273,7 +274,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="fade-down-right" data-aos-duration="1500">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra _STEM.jpg" alt="">
+                                    <img data-src="img/stem/Accra _STEM.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -288,7 +289,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_STEM2.jpeg" alt="">
+                                    <img data-src="img/stem/Accra_STEM2.jpeg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -303,7 +304,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_High5.jpg" alt="">
+                                    <img data-src="img/stem/Accra_High5.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -318,7 +319,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/stem/Accra_High1.jpg" alt="">
+                                    <img data-src="img/stem/Accra_High1.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -723,7 +724,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img src="img/stem/Accra_High5.jpg" alt="">
+                                <img data-src="img/stem/Accra_High5.jpg" alt="" class="lazyload">
                             </a>
                             <span class="badge">Group Study</span>
                         </div>
@@ -743,7 +744,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img src="img/stem/Accra_High4.jpg" alt="">
+                                <img data-src="img/stem/Accra_High4.jpg" alt="" class="lazyload">
                             </a>
                             <span class="badge bandge_2">Class Life</span>
                         </div>
@@ -1006,6 +1007,7 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
 
 
     <script>
