@@ -289,7 +289,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img data-src="img/stem/Accra_STEM2.jpeg" alt="" class="lazyload">
+                                    <img data-src="img/stem/new-stem.jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -319,7 +319,7 @@
                         <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img data-src="img/stem/Accra_High1.jpg" alt="" class="lazyload">
+                                    <img data-src="img/stem/STEM SCHOOL. ASWASO STEM (2).jpg" alt="" class="lazyload">
                                 </div>
                                 <div class="program__content">
                                     {{-- <span>Agriculture</span> --}}
@@ -724,7 +724,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img data-src="img/stem/Accra_High5.jpg" alt="" class="lazyload">
+                                <img data-src="img/stem/STEM SCHOOL. ASWASO STEM (1).jpg" alt="" class="lazyload">
                             </a>
                             <span class="badge">Group Study</span>
                         </div>
@@ -744,7 +744,7 @@
                     <div class="single__news">
                         <div class="thumb">
                             <a href="/">
-                                <img data-src="img/stem/Accra_High4.jpg" alt="" class="lazyload">
+                                <img data-src="img/stem/STEM SCHOOL. ASWASO STEM (8).jpg" alt="" class="lazyload">
                             </a>
                             <span class="badge bandge_2">Class Life</span>
                         </div>
@@ -825,7 +825,8 @@
                             </h3>
                             <ul>
                                 <li><a href="#">Email: info@stem-ssp.com</a></li>
-                                <li><a href="#">Phone Number: </a></li>
+                                <li><a href="#">Phone Number: 0541914744</a></li>
+                                <li><a href="#">Phone Number: 0264369281</a></li>
                                 {{-- <li><a href="#">Careers</a></li>
                                 <li><a href="#">Press Center</a></li>
                                 <li><a href="#">Become an Instructor</a></li> --}}
