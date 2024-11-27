@@ -825,8 +825,8 @@
                             </h3>
                             <ul>
                                 <li><a href="#">Email: info@stem-ssp.com</a></li>
-                                <li><a href="#">Phone Number: 0541914744</a></li>
-                                <li><a href="#">Phone Number: 0264369281</a></li>
+                                <li><a href="#">Phone Number: <br> 0541914744 <br> 0264369281</a></li>
+                                {{-- <li><a href="#">Phone Number 2: 0264369281</a></li> --}}
                                 {{-- <li><a href="#">Careers</a></li>
                                 <li><a href="#">Press Center</a></li>
                                 <li><a href="#">Become an Instructor</a></li> --}}
