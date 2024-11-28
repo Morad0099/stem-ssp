@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Classes;
 use App\Models\Schools;
 use App\Models\Student;
 use App\Models\User;
@@ -17,8 +18,10 @@ class AdmissionController extends Controller
     public function index()
     {
         $schools = Schools::all();
+        $preselectedSchool = $schools->first(); // Assuming the first school is preselected
+        $classes = $preselectedSchool ? Classes::where('school_id', $preselectedSchool->id)->get() : [];
 
-        return view('modules.website.index', compact('schools'));
+        return view('modules.website.index', compact('schools', 'classes'));
     }
 
     public function apply(Request $request)
@@ -36,7 +39,7 @@ class AdmissionController extends Controller
         // $request->merge(['schools' => $schools]);
 
         // Force the schools input to be an array
-    $request->merge(['schools' => (array) $request->input('schools')]);
+        $request->merge(['schools' => (array) $request->input('schools')]);
 
 
         // Validate request
@@ -45,7 +48,8 @@ class AdmissionController extends Controller
             'middle_name' => 'nullable|string|max:255',
             'last_name' => 'required|string|max:255',
             'phone_number' => 'required|digits:10',
-            'index_number' => 'required|digits:10|unique:students,index_number',
+            'class_id' => 'required|exists:classes,id',
+            'index_number' => 'nullable|required_if:class_id,9|digits:10|unique:students,index_number',
             'date_of_birth' => 'required|date_format:m/d/Y', // Validate the input format
             'email' => 'required|email|unique:students,email|unique:users,email',
             'schools' => 'required|array|min:1|max:2',
@@ -70,6 +74,7 @@ class AdmissionController extends Controller
             'index_number' => $request->index_number,
             'date_of_birth' => $dateOfBirth,
             'email' => $request->email,
+            'class_id' => $request->class_id,
         ]);
 
         // Attach selected schools
@@ -104,6 +109,18 @@ class AdmissionController extends Controller
 
         return redirect()->route('index')->with('success', 'Application submitted successfully!');
     }
+
+    public function getClasses(Request $request)
+    {
+        $request->validate([
+            'school_id' => 'required|exists:schools,id',
+        ]);
+
+        $classes = Classes::where('school_id', $request->school_id)->get();
+
+        return response()->json($classes);
+    }
+
 
 
 

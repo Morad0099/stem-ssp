@@ -12,6 +12,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 Route::get('/', [AdmissionController::class, 'index'])->name('index');
 Route::post('/apply', [AdmissionController::class, 'apply'])->name('apply');
+Route::post('/get-classes', [AdmissionController::class, 'getClasses'])->name('get-classes');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [RouteController::class, 'dashboard'])->name('dashboard');

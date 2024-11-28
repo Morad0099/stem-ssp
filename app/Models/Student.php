@@ -19,6 +19,7 @@ class Student extends Model
         'phone_number',
         'email',
         'school_assigned_id',
+        'class_id',
     ];
 
     public function selectedSchools()
@@ -35,5 +36,9 @@ class Student extends Model
     {
         return $this->belongsToMany(Schools::class, 'application_school', 'application_id', 'school_id');
     }
-    
+
+    public function class()
+    {
+        return $this->belongsTo(Classes::class);
+    }
 }

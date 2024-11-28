@@ -32,6 +32,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
 
@@ -633,12 +634,12 @@
                                         </div>
                                     </div>
                                     <!-- Index Number -->
-                                    <div class="col-md-6">
+                                    {{-- <div class="col-md-6">
                                         <div class="single_input">
                                             <input type="text" name="index_number"
                                                 placeholder="10 Digits Index Number" required maxlength="10">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- Date of Birth -->
                                     <div class="col-md-6">
                                         <div class="single_input">
@@ -671,6 +672,12 @@
                                             <input type="hidden" name="schools[]" class="hidden-input">
                                         </div>
                                     </div> --}}
+                                    <div class="col-md-6">
+                                        <div class="single_input">
+                                            <input type="email" name="email" placeholder="Email Address"
+                                                required>
+                                        </div>
+                                    </div>
 
                                     <div class="col-md-6">
                                         <div class="single_input">
@@ -682,14 +689,28 @@
                                         </div>
                                     </div>
 
-
-                                    <!-- Email -->
                                     <div class="col-md-6">
                                         <div class="single_input">
-                                            <input type="email" name="email" placeholder="Email Address"
-                                                required>
+                                            {{-- <label for="class">Class</label> --}}
+                                            <select id="class" name="class_id" class="form-control" required>
+                                                <option value="">Select a Class</option>
+                                                @foreach ($classes as $class)
+                                                    <option value="{{ $class->id }}">{{ $class->class_name }}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
+                                    
+
+                                    <div class="col-md-6" id="index-number-field" style="display: none;">
+                                        <div class="single_input">
+                                            <input type="text" name="index_number" placeholder="10 Digits Index Number" maxlength="10">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Email -->
+                                    
                                     <!-- Submit Button -->
                                     <div class="col-md-12">
                                         <div class="apply_btn">
@@ -1001,6 +1022,48 @@
                 });
             });
         });
+
+        document.getElementById('school').addEventListener('change', function () {
+    const schoolId = this.value;
+    const classSelect = document.getElementById('class');
+    const indexField = document.getElementById('index-number-field');
+
+    classSelect.innerHTML = '<option value="">Select a Class</option>';
+    indexField.style.display = 'none';
+
+    if (schoolId) {
+        fetch('/get-classes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            },
+            body: JSON.stringify({ school_id: schoolId })
+        })
+        .then(response => response.json())
+        .then(classes => {
+            classes.forEach(cls => {
+                const option = document.createElement('option');
+                option.value = cls.id;
+                option.textContent = cls.class_name;
+                classSelect.appendChild(option);
+            });
+        });
+    }
+});
+
+document.getElementById('class').addEventListener('change', function () {
+    const selectedOption = this.options[this.selectedIndex];
+    const indexField = document.getElementById('index-number-field');
+
+    // Toggle index number field visibility
+    if (selectedOption && selectedOption.text === 'SHS 1') {
+        indexField.style.display = 'block';
+    } else {
+        indexField.style.display = 'none';
+    }
+});
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
