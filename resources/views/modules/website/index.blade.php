@@ -130,7 +130,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text ">
                                 <h3>Your Gateway <br>
-                                    to enrolling <br> your child <br> at Accra <br> STEM Academy
+                                    to Enrolling <br> Your Child <br> at Accra <br> STEM Academy
                                 </h3>
                                 <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 {{-- <a href="#" class="boxed-btn4">How It Works</a> --}}
@@ -148,7 +148,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text ">
                                 <h3>Your Gateway <br>
-                                    to enrolling <br> your child <br> at Accra <br> STEM Academy
+                                    to Enrolling <br> Your Child <br> at Accra <br> STEM Academy
                                 </h3>
                                 <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 {{-- <a href="#" class="boxed-btn4">How It Works</a> --}}
@@ -165,7 +165,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text ">
                                 <h3>Your Gateway <br>
-                                    to enrolling <br> your child <br> at Accra <br> STEM Academy
+                                    to Enrolling <br> Your Child <br> at Accra <br> STEM Academy
                                 </h3>
                                 <a href="#application-form" class="boxed-btn3">Get Started</a>
                                 {{-- <a href="#" class="boxed-btn4">How It Works</a> --}}
