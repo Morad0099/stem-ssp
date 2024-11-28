@@ -12,7 +12,7 @@ class ApplicationController extends Controller
     public function index(Request $request)
 {
     // Start query with base filters
-    $query = Student::with('selectedSchools', 'assignedSchool')
+    $query = Student::with('selectedSchools', 'assignedSchool','class')
                     ->where('school_assigned_id', null);
 
     // Filter by date range

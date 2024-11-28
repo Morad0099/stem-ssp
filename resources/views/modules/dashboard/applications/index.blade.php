@@ -55,7 +55,8 @@
                             <th>Name</th>
                             <th>Phone Number</th>
                             <th>Email</th>
-                            <th>Selected Schools</th>
+                            <th>Selected School</th>
+                            <th>Selected Class</th>
                             <th>Assigned School</th>
                             <th>Action</th>
 
@@ -75,6 +76,14 @@
                                         <span class="text-muted">No schools selected</span>
                                     @endforelse
                                 </td>
+                                <td>
+                                    @if($student->class)
+                                        {{ $student->class->class_name }}
+                                    @else
+                                        <span class="text-muted">No class assigned</span>
+                                    @endif
+                                </td>
+                                
                                 <td>{{ $student->assignedSchool->sch_name ?? 'Not Assigned' }}</td>
                                 <td>
                                     <form action="{{ route('applications.assign') }}" method="POST">
