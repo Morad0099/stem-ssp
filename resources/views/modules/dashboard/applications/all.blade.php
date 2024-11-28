@@ -20,6 +20,18 @@
                     <div class="form-group me-2">
                         <input type="date" name="end_date" class="form-control" placeholder="End Date" value="{{ request('end_date') }}">
                     </div>
+                    <!-- Class Filter -->
+                    <div class="form-group me-2">
+                        {{-- <label for="class_id">Class</label> --}}
+                        <select name="class_id" class="form-control">
+                            <option value="">Select Class</option>
+                            @foreach ($classes as $class)
+                                <option value="{{ $class->id }}" {{ request('class_id') == $class->id ? 'selected' : '' }}>
+                                    {{ $class->class_name }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
                     <!-- Assigned School Filter -->
                     {{-- <div class="form-group me-2">
                         <select name="school_assigned_id" class="form-control">
@@ -33,6 +45,7 @@
                     </div> --}}
                     <!-- Submit Button -->
                     <button type="submit" class="btn btn-primary">Filter</button>
+                    <a href="{{ route('applications.all') }}" class="btn btn-secondary">Clear Filters</a>
                 </form>
             </div>
             <!-- Export Button Section -->

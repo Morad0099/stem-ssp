@@ -31,6 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/students/export', function () {
         return Excel::download(new StudentsExport, 'students.xlsx');
     })->name('students.export');
+    Route::post('/applications/mass-assign', [ApplicationController::class, 'massAssignSchool'])->name('applications.mass-assign');
 });
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
