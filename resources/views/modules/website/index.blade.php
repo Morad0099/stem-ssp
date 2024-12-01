@@ -520,9 +520,9 @@
                                         <h3 style="color: white">What Our Community Says</h3>
                                     </div> --}}
                                     <br>
-                                    <h4>"The hands-on projects and expert mentorship at STEM prepared me for university
-                                        and gave me a head start in my engineering degree."</h4>
-                                    <i style="color:white">Kwame A., Former Student</i> <br><br>
+                                    <h4>"Teaching at STEM has been a rewarding experience. The innovative curriculum and
+                                        enthusiastic students make every day exciting and fulfilling."</h4>
+                                    <i style="color:white">John D., STEM Educator</i> <br><br>
                                     {{-- <a href="#application-form" class="boxed-btn5">Apply NOw</a> --}}
                                 </div>
                             </div>
