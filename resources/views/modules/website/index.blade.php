@@ -542,7 +542,7 @@
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Join the STEM Movement Today</h3>
                         <p>Are you ready to unlock the potential within you or your child? STEM education is the key to
-                            a world of opportunities, innovation, and impact. At STEM-SSP, we’re committed to guiding
+                            a world of opportunities, innovation, and impact. At STEM, we’re committed to guiding
                             students every step of the way.</p>
                     </div>
                 </div>
